@@ -1,0 +1,464 @@
+[
+  {
+    "character_a": "Aran",
+    "character_b": "Evan (Freud)",
+    "relationship_type": "ally",
+    "description": "Fellow heroes who fought alongside each other to seal the Black Mage.",
+    "strength": 8
+  },
+  {
+    "character_a": "Aran",
+    "character_b": "Mercedes",
+    "relationship_type": "ally",
+    "description": "Comrades among the six heroes; Aran and Mercedes fought side by side in the final battle.",
+    "strength": 8
+  },
+  {
+    "character_a": "Aran",
+    "character_b": "Phantom",
+    "relationship_type": "ally",
+    "description": "Heroes alliance members who share the bond of having sacrificed their futures to seal the Black Mage.",
+    "strength": 7
+  },
+  {
+    "character_a": "Aran",
+    "character_b": "Luminous",
+    "relationship_type": "ally",
+    "description": "Both heroes who participated in the sealing ritual against the Black Mage.",
+    "strength": 7
+  },
+  {
+    "character_a": "Aran",
+    "character_b": "Shade",
+    "relationship_type": "ally",
+    "description": "Shade was Aran's closest companion, but Aran no longer remembers Shade exists due to his sacrifice.",
+    "strength": 9
+  },
+  {
+    "character_a": "Mercedes",
+    "character_b": "Phantom",
+    "relationship_type": "ally",
+    "description": "Fellow heroes with a complex dynamic; Phantom flirts while Mercedes keeps him in check.",
+    "strength": 7
+  },
+  {
+    "character_a": "Mercedes",
+    "character_b": "Luminous",
+    "relationship_type": "ally",
+    "description": "Heroes alliance members who respect each other's magical prowess.",
+    "strength": 7
+  },
+  {
+    "character_a": "Evan (Freud)",
+    "character_b": "Phantom",
+    "relationship_type": "ally",
+    "description": "Freud was the intellectual leader of the heroes; Phantom respected his brilliant mind.",
+    "strength": 8
+  },
+  {
+    "character_a": "Evan (Freud)",
+    "character_b": "Luminous",
+    "relationship_type": "ally",
+    "description": "Both powerful mages among the heroes who developed the sealing spell together.",
+    "strength": 8
+  },
+  {
+    "character_a": "Evan (Freud)",
+    "character_b": "Mir",
+    "relationship_type": "family",
+    "description": "Evan inherited Freud's spirit pact; Mir is his bonded dragon companion and lifelong partner.",
+    "strength": 10
+  },
+  {
+    "character_a": "Phantom",
+    "character_b": "Aria",
+    "relationship_type": "love",
+    "description": "Phantom loved Empress Aria deeply; her assassination by Lotus drove him to join the heroes.",
+    "strength": 10
+  },
+  {
+    "character_a": "Phantom",
+    "character_b": "Lotus",
+    "relationship_type": "enemy",
+    "description": "Phantom despises Lotus for assassinating his beloved Aria on the Black Mage's orders.",
+    "strength": 9
+  },
+  {
+    "character_a": "Luminous",
+    "character_b": "Black Mage",
+    "relationship_type": "enemy",
+    "description": "Luminous delivered the final blow to seal the Black Mage but was corrupted by his dark magic in return.",
+    "strength": 10
+  },
+  {
+    "character_a": "Luminous",
+    "character_b": "Lania",
+    "relationship_type": "family",
+    "description": "Lania is Luminous's adoptive companion who helps him maintain his humanity against the encroaching darkness.",
+    "strength": 8
+  },
+  {
+    "character_a": "Heroes (All)",
+    "character_b": "Black Mage",
+    "relationship_type": "enemy",
+    "description": "The six heroes united to seal the Black Mage, sacrificing centuries of their lives in the process.",
+    "strength": 10
+  },
+  {
+    "character_a": "Shade",
+    "character_b": "Moonbeam",
+    "relationship_type": "ally",
+    "description": "Moonbeam is the fox spirit companion who stayed with Shade even after the world forgot him.",
+    "strength": 9
+  },
+  {
+    "character_a": "Shade",
+    "character_b": "Black Mage",
+    "relationship_type": "enemy",
+    "description": "Shade sacrificed his existence to complete the seal on the Black Mage.",
+    "strength": 10
+  },
+  {
+    "character_a": "Empress Cygnus",
+    "character_b": "Mihile",
+    "relationship_type": "master_servant",
+    "description": "Mihile is the chief knight and personal guardian of Empress Cygnus, sworn to protect her.",
+    "strength": 9
+  },
+  {
+    "character_a": "Empress Cygnus",
+    "character_b": "Dawn Warrior",
+    "relationship_type": "master_servant",
+    "description": "Dawn Warriors serve as Cygnus's warriors, blessed by the sun spirit under her command.",
+    "strength": 7
+  },
+  {
+    "character_a": "Empress Cygnus",
+    "character_b": "Blaze Wizard",
+    "relationship_type": "master_servant",
+    "description": "Blaze Wizards serve Empress Cygnus as fire mages guided by the spirit Ignis.",
+    "strength": 7
+  },
+  {
+    "character_a": "Empress Cygnus",
+    "character_b": "Wind Archer",
+    "relationship_type": "master_servant",
+    "description": "Wind Archers are Cygnus Knights who draw power from the wind spirit.",
+    "strength": 7
+  },
+  {
+    "character_a": "Empress Cygnus",
+    "character_b": "Night Walker",
+    "relationship_type": "master_servant",
+    "description": "Night Walkers serve Cygnus from the shadows, guided by the darkness spirit.",
+    "strength": 7
+  },
+  {
+    "character_a": "Empress Cygnus",
+    "character_b": "Thunder Breaker",
+    "relationship_type": "master_servant",
+    "description": "Thunder Breakers fight for Cygnus with lightning-charged martial arts.",
+    "strength": 7
+  },
+  {
+    "character_a": "Empress Cygnus",
+    "character_b": "Shinsoo",
+    "relationship_type": "ally",
+    "description": "Shinsoo is the divine bird who guides and protects Empress Cygnus, her eternal guardian.",
+    "strength": 10
+  },
+  {
+    "character_a": "Empress Cygnus",
+    "character_b": "Empress Aria",
+    "relationship_type": "family",
+    "description": "Cygnus is the niece and successor of Empress Aria, inheriting the Maple throne.",
+    "strength": 8
+  },
+  {
+    "character_a": "Black Mage",
+    "character_b": "Orchid",
+    "relationship_type": "master_servant",
+    "description": "Orchid was a loyal commander of the Black Mage who led the Black Wings in his absence.",
+    "strength": 7
+  },
+  {
+    "character_a": "Black Mage",
+    "character_b": "Lotus",
+    "relationship_type": "master_servant",
+    "description": "Lotus served as a commander of the Black Mage, carrying out assassinations including Empress Aria.",
+    "strength": 7
+  },
+  {
+    "character_a": "Black Mage",
+    "character_b": "Hilla",
+    "relationship_type": "master_servant",
+    "description": "Hilla pledged her soul to the Black Mage in exchange for immortality and necromantic power.",
+    "strength": 8
+  },
+  {
+    "character_a": "Black Mage",
+    "character_b": "Magnus",
+    "relationship_type": "master_servant",
+    "description": "Magnus serves the Black Mage as a commander while pursuing his own ambitions of conquest in Grandis.",
+    "strength": 6
+  },
+  {
+    "character_a": "Black Mage",
+    "character_b": "Arkarium",
+    "relationship_type": "master_servant",
+    "description": "Arkarium is the serpent priest commander who has served the Black Mage since ancient times.",
+    "strength": 8
+  },
+  {
+    "character_a": "Black Mage",
+    "character_b": "Will",
+    "relationship_type": "master_servant",
+    "description": "Will guards the dimensional gate for the Black Mage as one of his most cunning commanders.",
+    "strength": 7
+  },
+  {
+    "character_a": "Black Mage",
+    "character_b": "Lucid",
+    "relationship_type": "master_servant",
+    "description": "Lucid was an elf who was corrupted and became a commander controlling the dream world for the Black Mage.",
+    "strength": 7
+  },
+  {
+    "character_a": "Black Mage",
+    "character_b": "Demon Slayer",
+    "relationship_type": "enemy",
+    "description": "The Demon Slayer was once a commander but betrayed the Black Mage after discovering his family was murdered.",
+    "strength": 9
+  },
+  {
+    "character_a": "Black Mage",
+    "character_b": "Damien",
+    "relationship_type": "master_servant",
+    "description": "Damien was manipulated by the Black Mage's forces and became a commander seeking to destroy the World Tree.",
+    "strength": 6
+  },
+  {
+    "character_a": "Orchid",
+    "character_b": "Lotus",
+    "relationship_type": "family",
+    "description": "Orchid and Lotus are twin siblings; Orchid's entire motivation revolves around saving her brother.",
+    "strength": 10
+  },
+  {
+    "character_a": "Orchid",
+    "character_b": "Phantom",
+    "relationship_type": "enemy",
+    "description": "Orchid and Phantom are enemies due to Lotus assassinating Aria, though their relationship evolves over time.",
+    "strength": 7
+  },
+  {
+    "character_a": "Damien",
+    "character_b": "Demon Slayer",
+    "relationship_type": "family",
+    "description": "Damien is the younger brother figure of the Demon Slayer, both from the same demon family.",
+    "strength": 9
+  },
+  {
+    "character_a": "Damien",
+    "character_b": "Orchid",
+    "relationship_type": "ally",
+    "description": "Damien and Orchid cooperated as commanders, with Orchid manipulating Damien for her own goals.",
+    "strength": 5
+  },
+  {
+    "character_a": "Demon Slayer",
+    "character_b": "Demon Avenger",
+    "relationship_type": "family",
+    "description": "The Demon Slayer and Demon Avenger share the same origin but chose different paths of power.",
+    "strength": 8
+  },
+  {
+    "character_a": "Demon Slayer",
+    "character_b": "Resistance",
+    "relationship_type": "ally",
+    "description": "After betraying the Black Mage, the Demon Slayer joined the Resistance in Edelstein.",
+    "strength": 7
+  },
+  {
+    "character_a": "Xenon",
+    "character_b": "Gelimer",
+    "relationship_type": "enemy",
+    "description": "Gelimer kidnapped Xenon as a child and converted them into a cyborg weapon; Xenon seeks revenge.",
+    "strength": 9
+  },
+  {
+    "character_a": "Xenon",
+    "character_b": "Claudine",
+    "relationship_type": "ally",
+    "description": "Claudine of the Resistance helped Xenon escape from Gelimer's laboratory and regain their humanity.",
+    "strength": 8
+  },
+  {
+    "character_a": "Kaiser",
+    "character_b": "Magnus",
+    "relationship_type": "enemy",
+    "description": "Kaiser fights to liberate Grandis from Magnus's tyrannical conquest of the Nova homeworld.",
+    "strength": 9
+  },
+  {
+    "character_a": "Kaiser",
+    "character_b": "Angelic Buster",
+    "relationship_type": "ally",
+    "description": "Kaiser (Kyle) and Angelic Buster (Tear) are childhood friends who protect Grandis together.",
+    "strength": 8
+  },
+  {
+    "character_a": "Kaiser",
+    "character_b": "Cadena",
+    "relationship_type": "ally",
+    "description": "Both Nova fighters allied against Magnus, though Cadena operates independently from the streets.",
+    "strength": 6
+  },
+  {
+    "character_a": "Angelic Buster",
+    "character_b": "Eskalade",
+    "relationship_type": "ally",
+    "description": "Eskalade is the ancient dragon spirit who granted Tear her Angelic Buster transformation powers.",
+    "strength": 9
+  },
+  {
+    "character_a": "Cadena",
+    "character_b": "Magnus",
+    "relationship_type": "enemy",
+    "description": "Magnus destroyed Cadena's family and home, driving her vendetta from the slums of Savage Terminal.",
+    "strength": 9
+  },
+  {
+    "character_a": "Alpha",
+    "character_b": "Beta",
+    "relationship_type": "family",
+    "description": "Alpha and Beta are two halves of Zero, the Child of the Transcendent of Time, inseparable twins.",
+    "strength": 10
+  },
+  {
+    "character_a": "Zero (Alpha/Beta)",
+    "character_b": "Rhinne",
+    "relationship_type": "family",
+    "description": "Rhinne is the Transcendent of Time and the mother figure of Zero (Alpha and Beta).",
+    "strength": 9
+  },
+  {
+    "character_a": "Zero (Alpha/Beta)",
+    "character_b": "Black Mage",
+    "relationship_type": "enemy",
+    "description": "The Black Mage imprisoned Rhinne and split her child into two, trapping them in Mirror World.",
+    "strength": 9
+  },
+  {
+    "character_a": "Rhinne",
+    "character_b": "Black Mage",
+    "relationship_type": "enemy",
+    "description": "The Black Mage imprisoned Rhinne, the Transcendent of Time, to seize control over time itself.",
+    "strength": 10
+  },
+  {
+    "character_a": "Illium",
+    "character_b": "Darmoor",
+    "relationship_type": "enemy",
+    "description": "Illium fights against Darmoor, the Transcendent of Life from Grandis who seeks to subjugate the Flora.",
+    "strength": 8
+  },
+  {
+    "character_a": "Illium",
+    "character_b": "Adele",
+    "relationship_type": "ally",
+    "description": "Both Flora who oppose Darmoor's tyranny, though from different eras and factions.",
+    "strength": 6
+  },
+  {
+    "character_a": "Adele",
+    "character_b": "Darmoor",
+    "relationship_type": "enemy",
+    "description": "Adele was betrayed by the High Flora under Darmoor's influence and now fights against his regime.",
+    "strength": 9
+  },
+  {
+    "character_a": "Hoyoung",
+    "character_b": "Taotie",
+    "relationship_type": "rival",
+    "description": "Hoyoung accidentally released the fiend Taotie and must now track and recapture it.",
+    "strength": 8
+  },
+  {
+    "character_a": "Kain",
+    "character_b": "Dr. Y",
+    "relationship_type": "enemy",
+    "description": "Dr. Y is the scientist who experimented on Kain, implanting the malice weapon within him.",
+    "strength": 8
+  },
+  {
+    "character_a": "Lara",
+    "character_b": "Gri",
+    "relationship_type": "ally",
+    "description": "Gri is the bell spirit companion who aids Lara in communicating with mountain spirits.",
+    "strength": 8
+  },
+  {
+    "character_a": "Lucid",
+    "character_b": "Mercedes",
+    "relationship_type": "enemy",
+    "description": "Lucid was once an elf who admired the heroes, especially Mercedes, before being corrupted into a commander.",
+    "strength": 7
+  },
+  {
+    "character_a": "Seren",
+    "character_b": "Darmoor",
+    "relationship_type": "ally",
+    "description": "Seren is connected to Darmoor as both are Transcendents of Grandis, though their alliance is complex.",
+    "strength": 6
+  },
+  {
+    "character_a": "Seren",
+    "character_b": "Empress Cygnus",
+    "relationship_type": "enemy",
+    "description": "Seren and Cygnus clash as representatives of Grandis and Maple World's opposing forces.",
+    "strength": 7
+  },
+  {
+    "character_a": "Kinesis",
+    "character_b": "Jay",
+    "relationship_type": "ally",
+    "description": "Jay is Kinesis's best friend from Seoul who helps him navigate between the modern world and Maple World.",
+    "strength": 7
+  },
+  {
+    "character_a": "Hayato",
+    "character_b": "Kanna",
+    "relationship_type": "ally",
+    "description": "Hayato and Kanna are companions from Zipangu who crossed into Maple World together.",
+    "strength": 8
+  },
+  {
+    "character_a": "Gelimer",
+    "character_b": "Resistance",
+    "relationship_type": "enemy",
+    "description": "Gelimer is the Black Wings' chief scientist who oppresses Edelstein, the Resistance's home.",
+    "strength": 9
+  },
+  {
+    "character_a": "Gelimer",
+    "character_b": "Black Mage",
+    "relationship_type": "master_servant",
+    "description": "Gelimer serves the Black Mage through the Black Wings but harbors his own megalomaniacal ambitions.",
+    "strength": 5
+  },
+  {
+    "character_a": "Hilla",
+    "character_b": "Arkarium",
+    "relationship_type": "rival",
+    "description": "Both commanders of the Black Mage who compete for favor and power within the hierarchy.",
+    "strength": 5
+  },
+  {
+    "character_a": "Will",
+    "character_b": "Arkarium",
+    "relationship_type": "rival",
+    "description": "Will and Arkarium have a tense relationship as competing commanders with different methods.",
+    "strength": 4
+  }
+]

@@ -1,0 +1,594 @@
+[
+  {
+    "name": "Korean Beta / Launch",
+    "name_ko": "한국 베타 / 정식 출시",
+    "version": "0.01",
+    "date": "2003-04-29",
+    "era": "beta",
+    "category": "major",
+    "description": "MapleStory officially launches in South Korea after beta testing. The 2D side-scrolling MMORPG introduces a colorful world with Warriors, Magicians, Bowmen, and Thieves as the original four class branches. Victoria Island serves as the main continent.",
+    "description_ko": "메이플스토리가 베타 테스트를 거쳐 한국에서 정식 출시되었다. 2D 횡스크롤 MMORPG로 전사, 마법사, 궁수, 도적의 4개 직업군과 함께 빅토리아 아일랜드를 중심으로 한 화려한 세계를 선보였다.",
+    "key_changes": [
+      "Original four class branches: Warrior, Magician, Bowman, Thief",
+      "Victoria Island as the main continent",
+      "Party Quest system introduced",
+      "Basic trading and social systems",
+      "Maple Island tutorial zone"
+    ],
+    "key_changes_ko": [
+      "전사, 마법사, 궁수, 도적 4대 직업군 도입",
+      "빅토리아 아일랜드 메인 대륙",
+      "파티퀘스트 시스템 도입",
+      "기본 거래 및 소셜 시스템",
+      "메이플아일랜드 튜토리얼 지역"
+    ],
+    "impact": 10,
+    "player_reaction": "positive",
+    "new_content": ["Victoria Island", "Maple Island", "Kerning City PQ", "Henesys Hunting Ground"],
+    "classes_added": ["Warrior", "Magician", "Bowman", "Thief"],
+    "community_impact": "Created an entirely new genre experience in Korea. The free-to-play 2D MMORPG attracted millions of young players and became a cultural phenomenon, establishing PC bang culture around the game."
+  },
+  {
+    "name": "4th Job Advancement",
+    "name_ko": "4차 전직",
+    "version": "0.56",
+    "date": "2005-07-07",
+    "era": "classic",
+    "category": "major",
+    "description": "The long-awaited 4th job advancement arrives, giving all four original explorer classes their ultimate forms. New powerful skills, Horntail boss raid, and level 200 as the aspirational endgame goal. Leafre continent opens with dragon-themed content.",
+    "description_ko": "오랫동안 기다려온 4차 전직이 도입되어 4대 모험가 직업군이 최종 형태를 갖추게 되었다. 강력한 신규 스킬, 혼테일 보스 레이드, 레벨 200이라는 엔드게임 목표가 추가되었다. 리프레 대륙이 드래곤 테마 콘텐츠와 함께 오픈되었다.",
+    "key_changes": [
+      "4th job skills for all Explorer classes",
+      "Horntail boss raid introduced",
+      "Leafre continent opens",
+      "Level 200 becomes aspirational goal",
+      "Massive power spike for endgame players"
+    ],
+    "key_changes_ko": [
+      "모든 모험가 직업의 4차 스킬 추가",
+      "혼테일 보스 레이드 도입",
+      "리프레 대륙 오픈",
+      "레벨 200이 목표로 설정",
+      "엔드게임 유저의 대폭적인 전투력 상승"
+    ],
+    "impact": 9,
+    "player_reaction": "positive",
+    "new_content": ["Leafre", "Horntail Raid", "4th Job Skills", "Temple of Time"],
+    "classes_added": [],
+    "community_impact": "Reaching level 200 became the ultimate badge of honor. Horntail raids created the first true guild-based endgame community, and 4th job skills like Genesis and Meteor Shower became iconic."
+  },
+  {
+    "name": "Pirates",
+    "name_ko": "해적",
+    "version": "0.62",
+    "date": "2007-07-11",
+    "era": "classic",
+    "category": "major",
+    "description": "The fifth class branch, Pirates, joins MapleStory. Featuring Buccaneers who fight with bare fists and knuckles, and Corsairs who wield guns and summon battleships. Nautilus port becomes the Pirate hub.",
+    "description_ko": "5번째 직업군인 해적이 메이플스토리에 합류했다. 주먹과 너클로 싸우는 바이퍼와 총을 들고 배틀쉽을 소환하는 캡틴이 등장했다. 노틸러스 항구가 해적의 거점이 되었다.",
+    "key_changes": [
+      "New Pirate class branch with two paths",
+      "Buccaneer: Knuckle-based melee fighter",
+      "Corsair: Gun-wielding ranged attacker",
+      "Nautilus port as Pirate town",
+      "New Pirate-exclusive equipment"
+    ],
+    "key_changes_ko": [
+      "해적 직업군 추가 (2갈래 전직)",
+      "바이퍼: 너클 기반 근접 전투",
+      "캡틴: 총기 사용 원거리 공격",
+      "노틸러스 항구 해적 마을",
+      "해적 전용 장비 추가"
+    ],
+    "impact": 8,
+    "player_reaction": "positive",
+    "new_content": ["Nautilus Port", "Pirate Training Grounds", "New Pirate Equipment"],
+    "classes_added": ["Buccaneer", "Corsair"],
+    "community_impact": "Pirates brought fresh energy to the game. Buccaneers with their Dragon Strike and Corsairs with Battleship became fan favorites. The addition of a fifth class branch was a landmark moment."
+  },
+  {
+    "name": "Cygnus Knights",
+    "name_ko": "시그너스 기사단",
+    "version": "1.2.65",
+    "date": "2008-07-24",
+    "era": "classic",
+    "category": "major",
+    "description": "The Cygnus Knights are introduced as a new class branch under Empress Cygnus. Five new classes mirror the original Explorers but with unique elemental twists. Capped at level 120 with a special ultimate skill that transfers to Explorer characters.",
+    "description_ko": "시그너스 여제 휘하의 시그너스 기사단이 새로운 직업군으로 추가되었다. 5개 신규 직업이 기존 모험가를 기반으로 고유한 원소 특성을 가졌다. 레벨 120 제한이 있었으며 모험가에게 전수되는 특별한 궁극기가 특징이었다.",
+    "key_changes": [
+      "Five new Cygnus Knight classes",
+      "Level 120 cap with blessing transfer to Explorers",
+      "Empress Cygnus storyline",
+      "Ereve floating island as KoC hub",
+      "Elemental-themed skills for each class"
+    ],
+    "key_changes_ko": [
+      "시그너스 기사단 5개 직업 추가",
+      "레벨 120 제한, 모험가에게 축복 전수",
+      "시그너스 여제 스토리라인",
+      "에레브 부유섬 기사단 거점",
+      "각 직업별 원소 테마 스킬"
+    ],
+    "impact": 7,
+    "player_reaction": "positive",
+    "new_content": ["Ereve", "Empress Cygnus Storyline", "Knight Skill Transfer"],
+    "classes_added": ["Dawn Warrior", "Blaze Wizard", "Wind Archer", "Night Walker", "Thunder Breaker"],
+    "community_impact": "Created the concept of 'link skills' and cross-character benefits that would become central to modern MapleStory. Many players made KoC characters specifically for the blessing transfer."
+  },
+  {
+    "name": "Aran / Evan",
+    "name_ko": "아란 / 에반",
+    "version": "1.2.79",
+    "date": "2009-07-09",
+    "era": "classic",
+    "category": "major",
+    "description": "The first Hero classes debut with Aran, the legendary polearm warrior, and Evan, the Dragon Master successor to Freud. These classes introduce unique combo and dragon partner mechanics, beginning the Heroes of Maple storyline.",
+    "description_ko": "최초의 영웅 직업인 아란(전설의 폴암 전사)과 에반(프리드의 후계자, 드래곤 마스터)이 등장했다. 고유한 콤보 시스템과 드래곤 파트너 메카닉을 도입하며 메이플 영웅 스토리라인의 시작을 알렸다.",
+    "key_changes": [
+      "Aran: Combo-based polearm hero",
+      "Evan: Dragon partner mechanic",
+      "Hero storyline begins",
+      "Unique class-specific mechanics",
+      "Rien Island for Aran, farm for Evan"
+    ],
+    "key_changes_ko": [
+      "아란: 콤보 기반 폴암 영웅",
+      "에반: 드래곤 파트너 메카닉",
+      "영웅 스토리라인 시작",
+      "직업별 고유 메카닉 도입",
+      "아란의 리엔, 에반의 농장"
+    ],
+    "impact": 7,
+    "player_reaction": "positive",
+    "new_content": ["Rien Island", "Evan's Farm", "Heroes Storyline Introduction"],
+    "classes_added": ["Aran", "Evan"],
+    "community_impact": "Aran's combo system was revolutionary and made leveling feel dynamic. Evan's dragon Mir became one of the most beloved NPCs. These classes set the template for future story-driven class releases."
+  },
+  {
+    "name": "Big Bang",
+    "name_ko": "빅뱅",
+    "version": "1.2.100",
+    "date": "2010-07-08",
+    "era": "big_bang",
+    "category": "major",
+    "description": "The most significant update in MapleStory history. Completely revamped the game with new maps, rebalanced all classes, restructured the world map, and introduced a streamlined leveling system. EXP curves were dramatically flattened, making leveling far faster.",
+    "description_ko": "메이플스토리 역사상 가장 큰 업데이트. 새로운 맵, 전 직업 리밸런스, 월드맵 재구성, 간소화된 레벨링 시스템 도입으로 게임을 완전히 개편했다. 경험치 곡선이 대폭 완화되어 레벨링 속도가 크게 빨라졌다.",
+    "key_changes": [
+      "Complete world map restructure",
+      "All classes rebalanced",
+      "New damage formula",
+      "Level cap raised to 200",
+      "Streamlined questing system",
+      "EXP curve dramatically flattened",
+      "New tutorial and early-game experience"
+    ],
+    "key_changes_ko": [
+      "전체 월드맵 재구성",
+      "전 직업 리밸런스",
+      "새로운 데미지 공식",
+      "레벨 캡 200으로 상향",
+      "퀘스트 시스템 간소화",
+      "경험치 곡선 대폭 완화",
+      "새로운 튜토리얼 및 초반 경험"
+    ],
+    "impact": 10,
+    "player_reaction": "mixed",
+    "new_content": ["Elin Forest", "Lion King's Castle", "Silent Crusade"],
+    "classes_added": [],
+    "community_impact": "Divided the community between those who embraced modern MapleStory and those who longed for the pre-BB experience. Sparked the 'old maple' nostalgia movement that persists to this day."
+  },
+  {
+    "name": "Legends",
+    "name_ko": "레전드",
+    "version": "1.2.120",
+    "date": "2011-07-07",
+    "era": "big_bang",
+    "category": "major",
+    "description": "A wave of new Hero classes floods MapleStory. Mercedes the Dual Bowgun Elf Queen, Demon Slayer the betrayer of the Black Mage, and Phantom the legendary thief who steals skills from other classes all arrive in rapid succession.",
+    "description_ko": "새로운 영웅 직업들이 메이플스토리에 대거 등장했다. 듀얼 보우건의 엘프 여왕 메르세데스, 검은 마법사를 배신한 데몬슬레이어, 다른 직업의 스킬을 훔치는 전설의 도적 팬텀이 연이어 출시되었다.",
+    "key_changes": [
+      "Mercedes: Dual Bowgun elf queen with combo chains",
+      "Demon Slayer: Fury-based demon warrior",
+      "Phantom: Skill-stealing legendary thief",
+      "Extended Heroes storyline",
+      "Link Skill system formalized"
+    ],
+    "key_changes_ko": [
+      "메르세데스: 듀얼 보우건 엘프 여왕, 콤보 체인",
+      "데몬슬레이어: 분노 기반 데몬 전사",
+      "팬텀: 스킬 스틸 전설의 도적",
+      "영웅 스토리라인 확장",
+      "링크 스킬 시스템 정식화"
+    ],
+    "impact": 8,
+    "player_reaction": "positive",
+    "new_content": ["Elluel", "Demon's Stronghold", "Lumiere"],
+    "classes_added": ["Mercedes", "Demon Slayer", "Phantom"],
+    "community_impact": "Phantom's skill-stealing mechanic was one of the most creative designs ever. Link Skills became essential for character progression, encouraging players to create multiple characters."
+  },
+  {
+    "name": "Tempest",
+    "name_ko": "템페스트",
+    "version": "1.2.149",
+    "date": "2012-06-28",
+    "era": "tempest",
+    "category": "major",
+    "description": "Tempest brings Luminous the light/dark mage hero, Kaiser the dragon warrior of Grandis, and Angelic Buster the idol-themed magical girl. The Grandis dimension is introduced as a new world alongside Maple World.",
+    "description_ko": "템페스트 업데이트로 빛과 어둠의 마법사 영웅 루미너스, 그란디스의 드래곤 전사 카이저, 아이돌 테마의 마법소녀 엔젤릭버스터가 등장했다. 메이플 월드와 함께 새로운 차원인 그란디스가 도입되었다.",
+    "key_changes": [
+      "Luminous: Light/Dark equilibrium mechanic",
+      "Kaiser: Dragon transformation warrior",
+      "Angelic Buster: Soul Shooter idol class",
+      "Grandis dimension introduced",
+      "Pantheon and Heliseum maps",
+      "Level cap raised to 250"
+    ],
+    "key_changes_ko": [
+      "루미너스: 빛/어둠 이퀄리브리엄 메카닉",
+      "카이저: 드래곤 변신 전사",
+      "엔젤릭버스터: 소울 슈터 아이돌 직업",
+      "그란디스 차원 도입",
+      "판테온, 헬리시움 맵",
+      "레벨 캡 250으로 상향"
+    ],
+    "impact": 8,
+    "player_reaction": "positive",
+    "new_content": ["Grandis", "Pantheon", "Heliseum", "Magnus Boss"],
+    "classes_added": ["Luminous", "Kaiser", "Angelic Buster"],
+    "community_impact": "Grandis opened up massive new lore possibilities. Luminous became one of the most popular classes due to its satisfying light/dark toggle mechanic. Magnus became a key mid-game boss milestone."
+  },
+  {
+    "name": "RED",
+    "name_ko": "레드",
+    "version": "1.2.179",
+    "date": "2013-07-18",
+    "era": "red",
+    "category": "major",
+    "description": "RED (Reboot, Evolution, Delight) brings a massive revamp to the original Explorer classes, making them competitive with newer classes. Zero, a unique dual-character class using Alpha and Beta forms, is also introduced.",
+    "description_ko": "RED(Reboot, Evolution, Delight) 업데이트로 오리지널 모험가 직업이 대규모 리뉴얼되어 신규 직업과 경쟁력을 갖추게 되었다. 알파와 베타 두 형태를 전환하는 독특한 듀얼 캐릭터 직업 제로도 등장했다.",
+    "key_changes": [
+      "Complete Explorer class revamp",
+      "Zero: Dual-character Alpha/Beta class",
+      "Skill UI and system overhaul",
+      "Updated early-game experience",
+      "Explorer storyline renewal"
+    ],
+    "key_changes_ko": [
+      "모험가 직업 전면 리뉴얼",
+      "제로: 알파/베타 듀얼 캐릭터 직업",
+      "스킬 UI 및 시스템 개편",
+      "초반 게임 경험 업데이트",
+      "모험가 스토리라인 갱신"
+    ],
+    "impact": 8,
+    "player_reaction": "positive",
+    "new_content": ["Mirror World", "Zero's Temple", "Revamped Explorer Skills"],
+    "classes_added": ["Zero"],
+    "community_impact": "Explorers felt fresh and powerful again, bringing many players back to their original mains. Zero's tag-team mechanic was innovative and the class developed a dedicated fanbase."
+  },
+  {
+    "name": "Black Heaven",
+    "name_ko": "블랙헤븐",
+    "version": "1.2.228",
+    "date": "2014-12-18",
+    "era": "black",
+    "category": "content",
+    "description": "MapleStory's first major blockbuster storyline. An epic multi-act narrative featuring an aerial battle against the Black Wings' massive airship Black Heaven. Introduced cinematic storytelling with voice acting and cutscenes.",
+    "description_ko": "메이플스토리 최초의 대규모 블록버스터 스토리라인. 블랙윙의 거대 비행선 블랙헤븐에 맞서는 공중전을 다룬 다막극 서사가 펼쳐졌다. 성우 연기와 컷신을 갖춘 시네마틱 스토리텔링이 도입되었다.",
+    "key_changes": [
+      "Multi-act blockbuster storyline",
+      "Cinematic cutscenes with voice acting",
+      "Aerial combat sequences",
+      "Alliance system deepened",
+      "New boss: Lotus"
+    ],
+    "key_changes_ko": [
+      "다막극 블록버스터 스토리라인",
+      "성우 연기 포함 시네마틱 컷신",
+      "공중전 시퀀스",
+      "얼라이언스 시스템 강화",
+      "새로운 보스: 로터스"
+    ],
+    "impact": 7,
+    "player_reaction": "positive",
+    "new_content": ["Black Heaven Storyline", "Lotus Boss Fight", "Aerial Combat Maps"],
+    "classes_added": [],
+    "community_impact": "Proved that MapleStory could tell compelling, cinematic stories. The Lotus boss fight became iconic, and Black Heaven set the standard for future blockbuster content. Many consider it the peak of MapleStory storytelling."
+  },
+  {
+    "name": "Heroes of Maple",
+    "name_ko": "히어로즈 오브 메이플",
+    "version": "1.2.259",
+    "date": "2016-04-07",
+    "era": "black",
+    "category": "content",
+    "description": "The sequel blockbuster to Black Heaven. The six Heroes unite to face Damien, the Demon Slayer's corrupted brother, in a storyline that deepens the lore around the Heroes and the Black Mage's commanders.",
+    "description_ko": "블랙헤븐의 후속 블록버스터. 6명의 영웅이 데몬슬레이어의 타락한 형제 데미안에 맞서 힘을 합치는 스토리라인으로, 영웅들과 검은 마법사 군단장에 대한 세계관이 깊어졌다.",
+    "key_changes": [
+      "Six Heroes unite in blockbuster story",
+      "Damien boss fight introduced",
+      "Deepened Black Mage commander lore",
+      "Cinematic storytelling continued",
+      "New equipment: Absolab series"
+    ],
+    "key_changes_ko": [
+      "6명의 영웅이 합류하는 블록버스터 스토리",
+      "데미안 보스전 도입",
+      "검은 마법사 군단장 세계관 확장",
+      "시네마틱 스토리텔링 계속",
+      "새로운 장비: 앱솔랩스 시리즈"
+    ],
+    "impact": 7,
+    "player_reaction": "positive",
+    "new_content": ["Heroes of Maple Blockbuster", "Damien Boss", "Absolab Equipment"],
+    "classes_added": [],
+    "community_impact": "The emotional storyline around Damien and his connection to Demon Slayer resonated deeply. Absolab equipment became a key mid-game progression milestone that lasted for years."
+  },
+  {
+    "name": "5th Job",
+    "name_ko": "5차 전직",
+    "version": "1.2.270",
+    "date": "2016-12-15",
+    "era": "arcane",
+    "category": "major",
+    "description": "5th Job advancement arrives with the V Matrix system. Players at level 200+ can now obtain powerful new skills through Nodes. The Arcane River region begins with Vanishing Journey, introducing Arcane Power as a new progression system.",
+    "description_ko": "V 매트릭스 시스템과 함께 5차 전직이 도입되었다. 레벨 200 이상 플레이어가 노드를 통해 강력한 신규 스킬을 획득할 수 있게 되었다. 소멸의 여로를 시작으로 아케인 리버 지역이 열리며 새로운 진행 시스템인 아케인 포스가 도입되었다.",
+    "key_changes": [
+      "V Matrix node system",
+      "5th Job skills for all classes",
+      "Arcane River begins with Vanishing Journey",
+      "Arcane Power progression system",
+      "Nodestones and Boost Nodes",
+      "Level 200 becomes the new beginning"
+    ],
+    "key_changes_ko": [
+      "V 매트릭스 노드 시스템",
+      "전 직업 5차 스킬 추가",
+      "소멸의 여로로 아케인 리버 시작",
+      "아케인 포스 진행 시스템",
+      "노드스톤과 부스트 노드",
+      "레벨 200이 새로운 시작점"
+    ],
+    "impact": 9,
+    "player_reaction": "positive",
+    "new_content": ["V Matrix", "Vanishing Journey", "Arcane River", "Erdas"],
+    "classes_added": [],
+    "community_impact": "Completely redefined the endgame. Level 200 shifted from being the ultimate goal to just the beginning. The V Matrix gave players deep customization options and Arcane River became the definitive post-200 experience."
+  },
+  {
+    "name": "Arcane River",
+    "name_ko": "아케인 리버",
+    "version": "1.2.280",
+    "date": "2017-06-22",
+    "era": "arcane",
+    "category": "content",
+    "description": "The Arcane River expands with new regions: Chu Chu Island, Lachelein, Arcana, Morass, and eventually Esfera. Each area features unique storylines, daily quests, and Arcane Symbols for progression toward the Black Mage confrontation.",
+    "description_ko": "아케인 리버가 츄츄 아일랜드, 레헬른, 아르카나, 모라스, 에스페라 등 새로운 지역으로 확장되었다. 각 지역은 독특한 스토리라인, 일일 퀘스트, 검은 마법사 대결을 위한 아케인 심볼 진행 시스템을 갖추었다.",
+    "key_changes": [
+      "Chu Chu Island, Lachelein, Arcana, Morass, Esfera regions",
+      "Arcane Symbol daily quest system",
+      "Unique storyline per region",
+      "Lucid and Will boss fights",
+      "Arcane Shade equipment"
+    ],
+    "key_changes_ko": [
+      "츄츄 아일랜드, 레헬른, 아르카나, 모라스, 에스페라 지역",
+      "아케인 심볼 일일 퀘스트 시스템",
+      "지역별 고유 스토리라인",
+      "루시드, 윌 보스전",
+      "아케인셰이드 장비"
+    ],
+    "impact": 8,
+    "player_reaction": "mixed",
+    "new_content": ["Chu Chu Island", "Lachelein", "Arcana", "Morass", "Esfera", "Lucid Boss", "Will Boss"],
+    "classes_added": [],
+    "community_impact": "Daily quests became a core part of the MapleStory routine, for better or worse. Lucid became one of the most iconic bosses with her dream-themed mechanics. The grind to max Arcane Symbols defined the endgame for years."
+  },
+  {
+    "name": "Black Mage",
+    "name_ko": "검은 마법사",
+    "version": "1.2.316",
+    "date": "2018-11-15",
+    "era": "arcane",
+    "category": "major",
+    "description": "The culmination of over a decade of storyline. The Black Mage, MapleStory's ultimate villain, is finally confronted in a massive server-wide raid event. Tenebris region opens as the final chapter. The Black Mage battle requires coordination across multiple parties.",
+    "description_ko": "10년 이상의 스토리라인의 결정판. 메이플스토리 최종 빌런인 검은 마법사와의 전서버 레이드 이벤트가 펼쳐졌다. 테네브리스 지역이 최종 챕터로 오픈되었다. 검은 마법사 전투는 다수의 파티 간 협동이 필요했다.",
+    "key_changes": [
+      "Black Mage final boss raid",
+      "Tenebris region: Moonbridge, Labyrinth, Limina",
+      "Server-wide participation event",
+      "Conclusion of Heroes storyline arc",
+      "Genesis weapons as ultimate reward"
+    ],
+    "key_changes_ko": [
+      "검은 마법사 최종 보스 레이드",
+      "테네브리스 지역: 문브릿지, 미궁, 리미나",
+      "전서버 참여 이벤트",
+      "영웅 스토리라인 아크 완결",
+      "최종 보상 제네시스 무기"
+    ],
+    "impact": 10,
+    "player_reaction": "positive",
+    "new_content": ["Tenebris", "Moonbridge", "Labyrinth of Suffering", "Limina", "Black Mage Raid"],
+    "classes_added": [],
+    "community_impact": "A legendary moment in MapleStory history. Servers came together for the first time in years, and clearing the Black Mage became the ultimate achievement. The event was emotional for long-time players who had followed the story since beta."
+  },
+  {
+    "name": "Glory",
+    "name_ko": "글로리",
+    "version": "1.2.327",
+    "date": "2019-06-12",
+    "era": "destiny",
+    "category": "major",
+    "description": "Post-Black Mage era begins. Pathfinder, Hoyoung (a Taoist sage from Grandis), and Adele (a knight of the High Flora) are released as new classes. The story begins shifting toward the Grandis dimension and new threats.",
+    "description_ko": "검은 마법사 이후의 시대가 시작되었다. 패스파인더, 그란디스의 도사 호영, 하이 플로라의 기사 아델이 새로운 직업으로 출시되었다. 스토리가 그란디스 차원과 새로운 위협으로 전환되기 시작했다.",
+    "key_changes": [
+      "Pathfinder: Ancient Bow-wielding Explorer",
+      "Hoyoung: Taoist sage with fan and scroll",
+      "Adele: High Flora knight with floating swords",
+      "Post-Black Mage storyline begins",
+      "Grandis becomes focus of new narrative"
+    ],
+    "key_changes_ko": [
+      "패스파인더: 에인션트 보우 모험가",
+      "호영: 부채와 두루마리의 도사",
+      "아델: 플로팅 소드의 하이 플로라 기사",
+      "검은 마법사 이후 스토리라인 시작",
+      "그란디스가 새로운 서사의 중심"
+    ],
+    "impact": 7,
+    "player_reaction": "positive",
+    "new_content": ["Savage Terminal", "Ristonia", "Ancient Bow Content"],
+    "classes_added": ["Pathfinder", "Hoyoung", "Adele"],
+    "community_impact": "Hoyoung became massively popular in KMS thanks to its Korean cultural theming and flashy skills. Adele was praised for powerful and satisfying gameplay. The shift to Grandis storyline created excitement for new lore."
+  },
+  {
+    "name": "Awake",
+    "name_ko": "어웨이크",
+    "version": "1.2.342",
+    "date": "2020-06-10",
+    "era": "destiny",
+    "category": "content",
+    "description": "All classes receive enhanced 5th Job skills called AWAKE skills. Each class gets a unique cinematic and upgraded abilities. Includes quality of life improvements and further story development in the Grandis arc.",
+    "description_ko": "전 직업이 어웨이크 스킬이라 불리는 강화된 5차 스킬을 받았다. 각 직업별 고유 시네마틱과 업그레이드된 능력이 추가되었다. 편의성 개선과 그란디스 아크의 스토리 진행도 포함되었다.",
+    "key_changes": [
+      "New AWAKE skills for all classes",
+      "Class-specific cinematics",
+      "Enhanced V Matrix options",
+      "Quality of life improvements",
+      "Grandis storyline continuation"
+    ],
+    "key_changes_ko": [
+      "전 직업 어웨이크 스킬 추가",
+      "직업별 고유 시네마틱",
+      "V 매트릭스 옵션 강화",
+      "편의성 개선",
+      "그란디스 스토리라인 계속"
+    ],
+    "impact": 6,
+    "player_reaction": "positive",
+    "new_content": ["AWAKE Skills", "Class Cinematics", "Enhanced 5th Job Content"],
+    "classes_added": [],
+    "community_impact": "Players appreciated the love given to every class. The individual class cinematics made each class feel special and renewed interest in maining specific characters."
+  },
+  {
+    "name": "DESTINY",
+    "name_ko": "데스티니",
+    "version": "1.2.366",
+    "date": "2022-06-15",
+    "era": "destiny",
+    "category": "major",
+    "description": "A massive remaster of the entire MapleStory experience. Adventurer (Explorer) classes receive complete redesigns with new animations and skill effects. Server infrastructure improvements, progression system overhauls, and a renewed focus on the new player experience.",
+    "description_ko": "메이플스토리 전체 경험의 대규모 리마스터. 모험가 직업군이 새로운 애니메이션과 스킬 이펙트로 완전히 재디자인되었다. 서버 인프라 개선, 진행 시스템 개편, 신규 유저 경험에 대한 새로운 집중이 이루어졌다.",
+    "key_changes": [
+      "Complete Explorer class redesign",
+      "New animations and skill effects",
+      "Server stability improvements",
+      "Progression system overhaul",
+      "Improved new player experience",
+      "Cernium storyline continuation"
+    ],
+    "key_changes_ko": [
+      "모험가 직업 완전 재디자인",
+      "새로운 애니메이션과 스킬 이펙트",
+      "서버 안정성 개선",
+      "진행 시스템 개편",
+      "신규 유저 경험 개선",
+      "세르니움 스토리라인 계속"
+    ],
+    "impact": 9,
+    "player_reaction": "positive",
+    "new_content": ["Redesigned Explorer Skills", "Cernium", "Hotel Arcus"],
+    "classes_added": [],
+    "community_impact": "Widely praised as one of the best updates in years. Long-time Explorer mains were thrilled with the modernized skills. The update brought back many lapsed players and was seen as MapleStory's renaissance."
+  },
+  {
+    "name": "Ignition / 6th Job",
+    "name_ko": "이그니션 / 6차 전직",
+    "version": "1.2.374",
+    "date": "2022-12-14",
+    "era": "modern",
+    "category": "major",
+    "description": "6th Job advancement introduces the HEXA Matrix system. Players can now enhance their core skills to HEXA level, unlocking devastating new abilities. Mastery Cores and Skill Cores provide deep customization for endgame progression.",
+    "description_ko": "6차 전직과 함께 헥사 매트릭스 시스템이 도입되었다. 핵심 스킬을 헥사 레벨로 강화하여 강력한 신규 능력을 해금할 수 있게 되었다. 마스터리 코어와 스킬 코어가 엔드게임 진행에 깊은 커스터마이징을 제공했다.",
+    "key_changes": [
+      "HEXA Matrix system",
+      "6th Job skills for all classes",
+      "Mastery Cores and Skill Cores",
+      "Enhanced endgame progression",
+      "New HEXA skill effects and animations",
+      "Sol Erda as new progression resource"
+    ],
+    "key_changes_ko": [
+      "헥사 매트릭스 시스템",
+      "전 직업 6차 스킬 추가",
+      "마스터리 코어와 스킬 코어",
+      "엔드게임 진행 강화",
+      "새로운 헥사 스킬 이펙트와 애니메이션",
+      "솔 에르다 새로운 진행 자원"
+    ],
+    "impact": 9,
+    "player_reaction": "positive",
+    "new_content": ["HEXA Matrix", "Sol Erda System", "6th Job Skills", "Tallus"],
+    "classes_added": [],
+    "community_impact": "HEXA skills brought a new level of power fantasy to every class. The system was praised for its depth and customization options. Sol Erda grinding became the new daily endgame activity."
+  },
+  {
+    "name": "New Age",
+    "name_ko": "신세대 / 뉴에이지",
+    "version": "1.2.385",
+    "date": "2023-06-14",
+    "era": "modern",
+    "category": "major",
+    "description": "Major Grandis expansion with new regions and storyline progression. The battle against the Grandis enemies intensifies. New areas open in the Grandis continent, expanding the post-Arcane River endgame content significantly.",
+    "description_ko": "그란디스 대규모 확장과 새로운 지역 및 스토리라인 진행. 그란디스 적과의 전투가 심화되었다. 그란디스 대륙에 새로운 지역이 열리며 아케인 리버 이후의 엔드게임 콘텐츠가 크게 확장되었다.",
+    "key_changes": [
+      "Grandis continent expansion",
+      "New storyline progression",
+      "Additional endgame regions",
+      "New boss content",
+      "Sacred Power progression system expansion"
+    ],
+    "key_changes_ko": [
+      "그란디스 대륙 확장",
+      "새로운 스토리라인 진행",
+      "추가 엔드게임 지역",
+      "새로운 보스 콘텐츠",
+      "성스러운 힘 진행 시스템 확장"
+    ],
+    "impact": 7,
+    "player_reaction": "positive",
+    "new_content": ["New Grandis Regions", "Extended Sacred Force Areas", "New Boss Encounters"],
+    "classes_added": [],
+    "community_impact": "Kept the momentum from DESTINY and Ignition going strong. The Grandis storyline deepened, giving endgame players more meaningful content to work toward. The power scaling continued to evolve."
+  },
+  {
+    "name": "Dreamer",
+    "name_ko": "드리머",
+    "version": "1.2.398",
+    "date": "2024-06-19",
+    "era": "modern",
+    "category": "major",
+    "description": "The latest major update continuing MapleStory's evolution. Features new content, class balancing, system improvements, and further expansion of the Grandis narrative. Quality of life updates and new progression paths for both new and veteran players.",
+    "description_ko": "메이플스토리의 진화를 이어가는 최신 대규모 업데이트. 새로운 콘텐츠, 직업 밸런싱, 시스템 개선, 그란디스 서사의 추가 확장이 포함되었다. 신규 및 베테랑 유저 모두를 위한 편의성 업데이트와 새로운 진행 경로가 제공되었다.",
+    "key_changes": [
+      "New content and storyline expansion",
+      "Class balancing pass",
+      "System improvements and QoL updates",
+      "Further Grandis narrative development",
+      "New progression paths for all player levels"
+    ],
+    "key_changes_ko": [
+      "새로운 콘텐츠 및 스토리라인 확장",
+      "직업 밸런싱 패치",
+      "시스템 개선 및 편의성 업데이트",
+      "그란디스 서사 추가 진행",
+      "모든 레벨 유저를 위한 새로운 진행 경로"
+    ],
+    "impact": 7,
+    "player_reaction": "positive",
+    "new_content": ["New Story Content", "Updated Systems", "New Progression Features"],
+    "classes_added": [],
+    "community_impact": "Continued MapleStory's strong streak of updates. The game felt healthier than ever with consistent improvements to both content and systems, maintaining a growing and engaged player base."
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Link Skills",
+    "name_ko": "링크 스킬",
+    "category": "link_skill",
+    "description": "Cross-character passive buffs that can be shared between characters on the same account. Each class has a unique Link Skill that grows stronger as the character levels up, encouraging players to create multiple characters for account-wide benefits.",
+    "unlock_level": 70,
+    "max_level": "Level 3 (at character Lv.210)",
+    "details": "Each character class provides a different link skill (e.g., Mercedes gives EXP bonus, Demon Avenger gives damage bonus). You can link up to 12/13 skills depending on the server. Link skills are essential for both new and endgame players."
+  },
+  {
+    "name": "Legion System",
+    "name_ko": "유니온",
+    "category": "legion",
+    "description": "An account-wide system where all characters on the account contribute to a collective board that provides stat bonuses. The total level of all characters determines your Legion rank, and each character acts as a block on the Legion board.",
+    "unlock_level": 60,
+    "max_level": "8000 Legion (total combined levels across all characters)",
+    "details": "Characters are placed as Tetris-like blocks on a grid. Different class types provide different stat bonuses when placed. Higher Legion ranks unlock more slots and board area. Key milestones: 3000 (good), 6000 (great), 8000 (endgame). Legion coins can be spent on daily buffs."
+  },
+  {
+    "name": "Inner Ability",
+    "name_ko": "잠재능력",
+    "category": "inner_ability",
+    "description": "A set of randomly rolled bonus lines that provide unique stat boosts to your character. Inner Ability uses Honor EXP to reroll for better lines, and can reach Legendary tier for the most powerful bonuses.",
+    "unlock_level": 50,
+    "max_level": "Legendary tier (3 lines)",
+    "details": "Tiers range from Rare to Legendary. Top-tier lines include Attack Speed +1, Boss Damage +20%, and Buff Duration +50%. Circulators can lock lines while rerolling others. Inner Ability is one of the key free-to-play progression systems."
+  },
+  {
+    "name": "Hyper Stats",
+    "name_ko": "하이퍼스탯",
+    "category": "hyper_stat",
+    "description": "Free stat points awarded each level starting at Lv.140 that can be distributed into various categories like damage, critical rate, boss damage, IED, and more. Hyper Stats allow flexible customization of your character's offensive and defensive capabilities.",
+    "unlock_level": 140,
+    "max_level": "Level 15 per stat (soft cap, each level costs more points)",
+    "details": "Stat categories include STR/DEX/INT/LUK, Critical Rate, Critical Damage, IED, Boss Damage, Normal Damage, Status Resistance, Arcane Force, and Sacred Force. Points can be reset for free. Most players prioritize Damage, Boss Damage, IED, and Critical Damage."
+  },
+  {
+    "name": "V Matrix / 5th Job",
+    "name_ko": "V 매트릭스 / 5차 전직",
+    "category": "5th_job",
+    "description": "The 5th job advancement system that introduces powerful new skills through Node Stones. Players slot Boost Nodes to enhance existing skills and unlock brand-new 5th job skills unique to their class, as well as shared common skills.",
+    "unlock_level": 200,
+    "max_level": "Level 60 per node (Boost Nodes), Level 30 (Skill Nodes)",
+    "details": "Node Stones are obtained from monsters in Arcane River areas. Boost Nodes enhance 1st-4th job skills. Skill Nodes grant new 5th job skills. Tri-nodes (boost nodes with 3 useful skills) are highly sought after. The V Matrix has limited slots that expand with character level."
+  },
+  {
+    "name": "HEXA Matrix / 6th Job",
+    "name_ko": "헥사 매트릭스 / 6차 전직",
+    "category": "hexa",
+    "description": "The most advanced job system in MapleStory, unlocked at Lv.260. HEXA Matrix enhances existing skills to HEXA tier and introduces the powerful Origin skill unique to each class. Powered by Sol Erda, a new resource from Grandis content.",
+    "unlock_level": 260,
+    "max_level": "Level 30 per HEXA skill",
+    "details": "Sol Erda and Sol Erda Fragments are used to unlock and level HEXA skills. There are 4 types of HEXA skills: Origin (class ultimate), Mastery (enhanced 5th job), Enhancement (enhanced V skills), and Common (shared skills). Origin skills are the most visually spectacular and powerful skills in the game."
+  },
+  {
+    "name": "Arcane Force",
+    "name_ko": "아케인포스",
+    "category": "arcane_force",
+    "description": "A power system required to deal full damage in Arcane River areas (Lv.200-260 content). Arcane Force is obtained through daily quests and weekly missions in each Arcane River region, acting as a time-gated progression wall.",
+    "unlock_level": 200,
+    "max_level": "1350 per symbol (Lv.20), total ~8100 across all 6 symbols",
+    "details": "Six Arcane River regions each have their own symbol: Vanishing Journey, Chu Chu Island, Lachelein, Arcana, Morass, and Esfera. Symbols also provide flat stat bonuses (main stat). Having 1.5x the required Arcane Force grants a 1.5x damage bonus. Symbols can be transferred between characters at a cost."
+  },
+  {
+    "name": "Sacred Force",
+    "name_ko": "성스러운 힘",
+    "category": "sacred_force",
+    "description": "The power system for Grandis content areas (Lv.260+), functioning similarly to Arcane Force. Sacred Power symbols are obtained through daily content in each Grandis region and provide stat bonuses alongside combat effectiveness.",
+    "unlock_level": 260,
+    "max_level": "Level 11 per symbol (ongoing expansion)",
+    "details": "Grandis regions include Cernium, Hotel Arcus, Odium, Shangri-La, Arteria, and Carcion. Sacred Force works the same as Arcane Force but for higher-level areas. This system represents the current endgame progression for most players."
+  },
+  {
+    "name": "Familiar System",
+    "name_ko": "패밀리어 시스템",
+    "category": "union",
+    "description": "A monster collection system where defeated monsters can be captured as Familiars that fight alongside you and provide passive bonuses. Familiars have potential lines similar to equipment, making them a significant source of stats.",
+    "unlock_level": 1,
+    "max_level": "Unique tier familiars with 3 lines",
+    "details": "Familiars provide IED, Boss Damage, item/meso drop rate, and HP restoration. The most sought-after familiar potentials are Boss Damage and IED lines. Familiars can be fused to increase their tier. Note: The familiar system differs significantly between GMS and KMS."
+  },
+  {
+    "name": "Potential System",
+    "name_ko": "잠재능력 시스템",
+    "category": "union",
+    "description": "Equipment in MapleStory can have hidden Potential lines that provide percentage-based stat bonuses. Potential is the single most impactful gear progression system, with tiers from Rare to Legendary offering increasingly powerful bonus lines.",
+    "unlock_level": 1,
+    "max_level": "Legendary tier (3 lines per item, additional 3 Bonus Potential lines)",
+    "details": "Tiers: Rare (blue), Epic (purple), Unique (yellow), Legendary (green). Key stats include %Main Stat, %ATT/MATT, %Boss Damage, and %IED. Cubes are used to reroll potential lines. Black Cubes and Red Cubes are the primary methods. Bonus Potential provides additional lines with lower values."
+  },
+  {
+    "name": "Star Force",
+    "name_ko": "스타포스",
+    "category": "union",
+    "description": "An equipment enhancement system where mesos are spent to add stars to gear, increasing base stats. Star Force has a chance of failure, with higher stars carrying the risk of item destruction, making it one of the most meso-intensive progression systems.",
+    "unlock_level": 1,
+    "max_level": "25 stars (for Lv.150+ equipment)",
+    "details": "Stars 1-10 are safe with no destruction risk. Stars 12, 15, and 17 have safeguard checkpoints. Stars 15-25 have increasing destruction chance. 17-star is considered the baseline for endgame, while 22-star is the goal for hardcore players. Star Force maps require minimum star counts to deal damage."
+  },
+  {
+    "name": "Flames / Bonus Stats",
+    "name_ko": "추가옵션 (불꽃)",
+    "category": "union",
+    "description": "Additional bonus stats on equipment generated by Flames of Rebirth items. Flames provide flat stat bonuses on top of the item's base stats and potential, adding another layer of gear optimization for min-maxing players.",
+    "unlock_level": 1,
+    "max_level": "Tier 7 flames (boss drops have up to T7)",
+    "details": "Flame tiers range from 1 to 7, with higher tiers giving more stats. Boss-dropped equipment has higher flame tiers on average. Key flame stats are %All Stat, flat main stat, and %ATT/MATT. Eternal Flames of Rebirth and Powerful Flames are used to reroll. Flame score calculators help evaluate gear quality."
+  },
+  {
+    "name": "Reboot World",
+    "name_ko": "리부트 월드",
+    "category": "union",
+    "description": "An alternative server type where trading between players is disabled, but meso rates and damage are significantly higher. In Reboot, all progression is self-found, and cubes can be purchased with mesos instead of real money, making it the preferred free-to-play experience.",
+    "unlock_level": 1,
+    "max_level": "N/A (server type, not a leveling system)",
+    "details": "Key differences from Regular servers: No trading/auction house, cubes cost mesos, higher base damage, higher meso drops, no Bonus Potential, no Scrolling/Star Force beyond 15 (KMS Reboot removed). Reboot emphasizes self-progression and time investment over spending. In KMS, Reboot was removed in 2023 and merged."
+  }
+]

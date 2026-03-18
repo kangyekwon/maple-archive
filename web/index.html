@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MapleStory Archive</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">MapleStory Archive</div>
+        <div class="header-search">
+            <input type="search" id="globalSearch" placeholder="Search characters, jobs, worlds, bosses..." autocomplete="off">
+            <div id="searchSuggestions" style="display:none; position:absolute; top:100%; left:0; right:0; background:var(--bg-card); border:1px solid var(--border); border-radius:0 0 12px 12px; max-height:300px; overflow-y:auto; z-index:50;"></div>
+        </div>
+        <div class="header-stats">
+            <span id="statsCount">Loading...</span>
+            <span class="visitor-count" id="visitorCount">Visitors: -</span>
+        </div>
+    </header>
+
+    <!-- Tabs -->
+    <nav class="tabs" id="tabsNav">
+        <div class="tab active" data-tab="search"><i class="fas fa-search"></i> Search</div>
+        <div class="tab" data-tab="character-graph"><i class="fas fa-project-diagram"></i> Character Graph</div>
+        <div class="tab" data-tab="world-map"><i class="fas fa-globe"></i> World Map</div>
+        <div class="tab" data-tab="job-tree"><i class="fas fa-sitemap"></i> Job Tree</div>
+        <div class="tab" data-tab="story-timeline"><i class="fas fa-clock"></i> Story Timeline</div>
+        <div class="tab" data-tab="encyclopedia"><i class="fas fa-book"></i> Encyclopedia</div>
+        <div class="tab" data-tab="boss-guide"><i class="fas fa-skull-crossbones"></i> Boss Guide</div>
+        <div class="tab" data-tab="gallery"><i class="fas fa-images"></i> Gallery</div>
+        <div class="tab" data-tab="community"><i class="fas fa-comments"></i> Community</div>
+        <div class="tab" data-tab="quiz"><i class="fas fa-question-circle"></i> Quiz</div>
+        <div class="tab" data-tab="skill-simulator"><i class="fas fa-magic"></i> Skills</div>
+        <div class="tab" data-tab="stats-dashboard"><i class="fas fa-chart-bar"></i> Stats</div>
+        <div class="tab" data-tab="party-quest"><i class="fas fa-dungeon"></i> Party Quest</div>
+        <div class="tab" data-tab="bgm"><i class="fas fa-music"></i> BGM</div>
+        <div class="tab" data-tab="patch-history"><i class="fas fa-history"></i> Patches</div>
+        <div class="tab" data-tab="maple-culture"><i class="fas fa-laugh-squint"></i> Culture</div>
+        <div class="tab" data-tab="data-explorer"><i class="fas fa-database"></i> Data Explorer</div>
+        <div class="tab" data-tab="resources"><i class="fas fa-external-link-alt"></i> Resources</div>
+    </nav>
+
+    <!-- Content -->
+    <main class="content">
+        <!-- Search Tab -->
+        <div class="tab-panel active" id="panel-search"></div>
+        <!-- Character Graph -->
+        <div class="tab-panel" id="panel-character-graph"></div>
+        <!-- World Map -->
+        <div class="tab-panel" id="panel-world-map"></div>
+        <!-- Job Tree -->
+        <div class="tab-panel" id="panel-job-tree"></div>
+        <!-- Story Timeline -->
+        <div class="tab-panel" id="panel-story-timeline"></div>
+        <!-- Encyclopedia -->
+        <div class="tab-panel" id="panel-encyclopedia"></div>
+        <!-- Boss Guide -->
+        <div class="tab-panel" id="panel-boss-guide"></div>
+        <!-- Gallery -->
+        <div class="tab-panel" id="panel-gallery"></div>
+        <!-- Community -->
+        <div class="tab-panel" id="panel-community"></div>
+        <!-- Quiz -->
+        <div class="tab-panel" id="panel-quiz"></div>
+        <!-- Skill Simulator -->
+        <div class="tab-panel" id="panel-skill-simulator"></div>
+        <!-- Stats Dashboard -->
+        <div class="tab-panel" id="panel-stats-dashboard"></div>
+        <!-- Party Quest -->
+        <div class="tab-panel" id="panel-party-quest"></div>
+        <!-- BGM -->
+        <div class="tab-panel" id="panel-bgm"></div>
+        <!-- Patch History -->
+        <div class="tab-panel" id="panel-patch-history"></div>
+        <!-- Maple Culture -->
+        <div class="tab-panel" id="panel-maple-culture"></div>
+        <!-- Data Explorer -->
+        <div class="tab-panel" id="panel-data-explorer"></div>
+        <!-- Resources -->
+        <div class="tab-panel" id="panel-resources"></div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modalContent">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/character-graph.js"></script>
+    <script src="/js/world-map.js"></script>
+    <script src="/js/job-tree.js"></script>
+    <script src="/js/story-timeline.js"></script>
+    <script src="/js/encyclopedia.js"></script>
+    <script src="/js/boss-guide.js"></script>
+    <script src="/js/gallery.js"></script>
+    <script src="/js/community.js"></script>
+    <script src="/js/quiz.js"></script>
+    <script src="/js/skill-simulator.js"></script>
+    <script src="/js/stats-dashboard.js"></script>
+    <script src="/js/party-quest.js"></script>
+    <script src="/js/bgm.js"></script>
+    <script src="/js/patch-history.js"></script>
+    <script src="/js/maple-culture.js"></script>
+    <script src="/js/data-explorer.js"></script>
+    <script src="/js/resources.js"></script>
+</body>
+</html>

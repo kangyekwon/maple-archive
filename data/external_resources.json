@@ -1,0 +1,208 @@
+{
+  "categories": [
+    {
+      "name": "Official Sites",
+      "name_ko": "공식 사이트",
+      "links": [
+        {
+          "name": "MapleStory KMS Official",
+          "name_ko": "메이플스토리 한국 공식 사이트",
+          "url": "https://maplestory.nexon.com",
+          "description": "Official Korean MapleStory website by Nexon Korea with news, updates, patch notes, and event information."
+        },
+        {
+          "name": "MapleStory GMS Official",
+          "name_ko": "메이플스토리 글로벌 공식 사이트",
+          "url": "https://maplestory.nexon.net",
+          "description": "Official Global MapleStory website by Nexon America with game downloads, news, and community features."
+        },
+        {
+          "name": "Nexon Korea",
+          "name_ko": "넥슨 코리아",
+          "url": "https://www.nexon.com",
+          "description": "Nexon Korea corporate site and game portal, the developer and publisher of MapleStory."
+        },
+        {
+          "name": "MapleStory Testpia (Test Server)",
+          "name_ko": "메이플스토리 테스트피아",
+          "url": "https://maplestory.nexon.com/Testworld",
+          "description": "KMS test server information page where upcoming patches and balance changes are previewed."
+        }
+      ]
+    },
+    {
+      "name": "Community",
+      "name_ko": "커뮤니티",
+      "links": [
+        {
+          "name": "Inven MapleStory",
+          "name_ko": "인벤 메이플스토리",
+          "url": "https://maple.inven.co.kr",
+          "description": "Korea's largest MapleStory community with guides, forums, patch analysis, and DPM rankings."
+        },
+        {
+          "name": "MapleStory Subreddit",
+          "name_ko": "메이플스토리 레딧",
+          "url": "https://www.reddit.com/r/Maplestory/",
+          "description": "Active English-speaking MapleStory community on Reddit with discussions, memes, guides, and Q&A."
+        },
+        {
+          "name": "MapleStory Discord (GMS)",
+          "name_ko": "메이플스토리 디스코드 (글로벌)",
+          "url": "https://discord.gg/maplestory",
+          "description": "Official GMS Discord server for real-time chat, party finding, and community events."
+        },
+        {
+          "name": "DCInside MapleStory Gallery",
+          "name_ko": "디시인사이드 메이플스토리 갤러리",
+          "url": "https://gall.dcinside.com/mgallery/board/lists/?id=maplestory",
+          "description": "Korean community gallery for MapleStory discussions, memes, tips, and player interactions."
+        },
+        {
+          "name": "MapleStory Inven DPM Chart",
+          "name_ko": "인벤 DPM 차트",
+          "url": "https://maple.inven.co.kr/dataninfo/dpm/",
+          "description": "Community-maintained DPM (Damage Per Minute) rankings comparing all MapleStory classes."
+        }
+      ]
+    },
+    {
+      "name": "Databases & Wikis",
+      "name_ko": "데이터베이스 & 위키",
+      "links": [
+        {
+          "name": "MapleStory.io",
+          "name_ko": "MapleStory.io",
+          "url": "https://maplestory.io",
+          "description": "Comprehensive database with item sprites, character simulators, map viewers, and extracted game data."
+        },
+        {
+          "name": "MapleStory Fandom Wiki",
+          "name_ko": "메이플스토리 팬덤 위키",
+          "url": "https://maplestory.fandom.com",
+          "description": "Collaborative English wiki covering all MapleStory content including classes, items, quests, and lore."
+        },
+        {
+          "name": "Namu Wiki - MapleStory",
+          "name_ko": "나무위키 - 메이플스토리",
+          "url": "https://namu.wiki/w/%EB%A9%94%EC%9D%B4%ED%94%8C%EC%8A%A4%ED%86%A0%EB%A6%AC",
+          "description": "Detailed Korean wiki with exhaustive information on MapleStory classes, systems, history, and meta analysis."
+        },
+        {
+          "name": "Maple Wiki (Global)",
+          "name_ko": "메이플 위키 (글로벌)",
+          "url": "https://maple.wiki",
+          "description": "A curated MapleStory wiki with skill tables, equipment databases, and progression guides."
+        },
+        {
+          "name": "SuckHard's MapleStory Library",
+          "name_ko": "석하드의 메이플 라이브러리",
+          "url": "https://www.grandislibrary.com",
+          "description": "GMS-focused resource with detailed class overviews, skill breakdowns, and content guides."
+        }
+      ]
+    },
+    {
+      "name": "Tools & Calculators",
+      "name_ko": "도구 & 계산기",
+      "links": [
+        {
+          "name": "MapleStory DPM Chart (Inven)",
+          "name_ko": "DPM 차트 (인벤)",
+          "url": "https://maple.inven.co.kr/dataninfo/dpm/",
+          "description": "Up-to-date DPM chart maintained by the Korean community, ranking all classes by theoretical damage output."
+        },
+        {
+          "name": "Maple Calculator (BrandonMP)",
+          "name_ko": "메이플 계산기",
+          "url": "https://brendonmay.github.io/starforceCalculator/",
+          "description": "Star Force enhancement cost calculator that estimates meso costs and expected attempts for target star levels."
+        },
+        {
+          "name": "MapleStory Handbook",
+          "name_ko": "메이플스토리 핸드북",
+          "url": "https://maplehandbook.com",
+          "description": "Comprehensive tool with flame score calculators, inner ability simulators, and gear comparison features."
+        },
+        {
+          "name": "Arcane Symbol Calculator",
+          "name_ko": "아케인 심볼 계산기",
+          "url": "https://symbolcalc.netlify.app",
+          "description": "Calculator for estimating Arcane and Sacred Symbol completion dates based on current progress and daily sources."
+        },
+        {
+          "name": "MapleStory Boss Crystal Calculator",
+          "name_ko": "보스 결정석 계산기",
+          "url": "https://mapletools.github.io/boss-crystal/",
+          "description": "Tool for calculating weekly meso income from boss crystal drops across all your characters."
+        }
+      ]
+    },
+    {
+      "name": "Media & Entertainment",
+      "name_ko": "미디어 & 엔터테인먼트",
+      "links": [
+        {
+          "name": "MapleStory Official YouTube",
+          "name_ko": "메이플스토리 공식 유튜브",
+          "url": "https://www.youtube.com/@MapleStory",
+          "description": "Official MapleStory YouTube channel with trailers, update previews, and event announcements."
+        },
+        {
+          "name": "MapleStory OST Collection",
+          "name_ko": "메이플스토리 OST 모음",
+          "url": "https://www.youtube.com/playlist?list=PLqGKy-0eFCT6qFE-jYVEhJLHE_x8h1Fv",
+          "description": "Curated playlist of MapleStory background music spanning all regions from Victoria Island to Grandis."
+        },
+        {
+          "name": "Nexon Korea YouTube",
+          "name_ko": "넥슨 코리아 유튜브",
+          "url": "https://www.youtube.com/@NEXONKorea",
+          "description": "Nexon Korea official channel with MapleStory winter/summer showcase events and developer talks."
+        },
+        {
+          "name": "IslingGunz (KMS Content Creator)",
+          "name_ko": "이슬링건즈 (KMS 콘텐츠 크리에이터)",
+          "url": "https://www.youtube.com/@IslingGunz",
+          "description": "Popular English-language content creator covering KMS updates, class reviews, and patch previews."
+        }
+      ]
+    },
+    {
+      "name": "Guides & Strategy",
+      "name_ko": "가이드 & 공략",
+      "links": [
+        {
+          "name": "Grandis Library - Training Guide",
+          "name_ko": "그란디스 라이브러리 - 사냥터 가이드",
+          "url": "https://www.grandislibrary.com/content/training-maps",
+          "description": "Comprehensive level-by-level training map guide from Lv.1 to Lv.300 with recommended areas for each range."
+        },
+        {
+          "name": "Grandis Library - Boss Guides",
+          "name_ko": "그란디스 라이브러리 - 보스 가이드",
+          "url": "https://www.grandislibrary.com/content/boss-guides",
+          "description": "Detailed boss mechanic guides covering all major bosses from Zakum to The Black Mage and beyond."
+        },
+        {
+          "name": "MapleStory New Player Guide (Reddit)",
+          "name_ko": "메이플스토리 뉴비 가이드 (레딧)",
+          "url": "https://www.reddit.com/r/Maplestory/wiki/guides/",
+          "description": "Community-curated new player guide covering progression, gear optimization, and class selection advice."
+        },
+        {
+          "name": "Inven Skill Build Guides",
+          "name_ko": "인벤 스킬 빌드 가이드",
+          "url": "https://maple.inven.co.kr/dataninfo/skill/",
+          "description": "Korean community skill build database with recommended skill point allocations and HEXA skill priorities."
+        },
+        {
+          "name": "Coppersan's Progression Guide",
+          "name_ko": "코퍼산의 성장 가이드",
+          "url": "https://docs.google.com/document/d/132E6dGMNTRHwRMV5bMnLFSqNzOB05V4qjNqMYBN2BKo",
+          "description": "Widely-referenced GMS progression guide covering gear upgrades, funding, and milestone targets from early to endgame."
+        }
+      ]
+    }
+  ]
+}

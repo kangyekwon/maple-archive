@@ -1,0 +1,444 @@
+{
+  "questions": [
+    {
+      "question": "A horde of monsters blocks your path. How do you deal with them?",
+      "question_ko": "몬스터 무리가 길을 막고 있습니다. 어떻게 대처하시겠습니까?",
+      "options": [
+        {
+          "text": "Charge straight in and cleave them all with one mighty swing",
+          "text_ko": "돌진해서 강력한 일격으로 모두 베어버린다",
+          "scores": { "warrior": 3, "magician": 0, "bowman": 0, "thief": 1, "pirate": 1 }
+        },
+        {
+          "text": "Cast a massive AoE spell and watch them evaporate",
+          "text_ko": "광역 마법을 시전해서 증발시킨다",
+          "scores": { "warrior": 0, "magician": 3, "bowman": 0, "thief": 0, "pirate": 1 }
+        },
+        {
+          "text": "Pick them off one by one from a safe distance",
+          "text_ko": "안전한 거리에서 하나씩 처치한다",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 3, "thief": 1, "pirate": 0 }
+        },
+        {
+          "text": "Sneak past them using stealth — why fight when you can avoid?",
+          "text_ko": "은신을 사용해서 몰래 지나간다 — 싸울 필요가 있나?",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 0, "thief": 3, "pirate": 1 }
+        },
+        {
+          "text": "Pull out a cannon and blast them with style",
+          "text_ko": "캐논을 꺼내서 멋지게 폭파시킨다",
+          "scores": { "warrior": 1, "magician": 0, "bowman": 1, "thief": 0, "pirate": 3 }
+        }
+      ]
+    },
+    {
+      "question": "Your party is fighting a tough boss. What role do you want to fill?",
+      "question_ko": "파티가 강력한 보스와 싸우고 있습니다. 어떤 역할을 맡고 싶으신가요?",
+      "options": [
+        {
+          "text": "The tank — I'll take the hits so others don't have to",
+          "text_ko": "탱커 — 내가 맞아줄 테니 다른 사람은 걱정하지 마",
+          "scores": { "warrior": 3, "magician": 0, "bowman": 0, "thief": 0, "pirate": 1 }
+        },
+        {
+          "text": "Support — buff the team and keep everyone alive",
+          "text_ko": "서포터 — 팀을 버프하고 모두를 살려둔다",
+          "scores": { "warrior": 0, "magician": 3, "bowman": 0, "thief": 0, "pirate": 1 }
+        },
+        {
+          "text": "Steady DPS — consistent damage from a safe position",
+          "text_ko": "꾸준한 딜러 — 안전한 위치에서 지속적인 딜을 넣는다",
+          "scores": { "warrior": 0, "magician": 1, "bowman": 3, "thief": 1, "pirate": 0 }
+        },
+        {
+          "text": "Burst DPS — wait for the opening, then unleash everything",
+          "text_ko": "버스트 딜러 — 기회를 노리다가 한 번에 모든 것을 쏟아붓는다",
+          "scores": { "warrior": 1, "magician": 0, "bowman": 0, "thief": 3, "pirate": 1 }
+        },
+        {
+          "text": "Utility — I do a bit of everything and fill gaps",
+          "text_ko": "유틸리티 — 이것저것 다 하면서 빈틈을 메운다",
+          "scores": { "warrior": 0, "magician": 1, "bowman": 1, "thief": 0, "pirate": 3 }
+        }
+      ]
+    },
+    {
+      "question": "How do you prefer to spend your time in MapleStory?",
+      "question_ko": "메이플스토리에서 시간을 어떻게 보내는 것을 선호하시나요?",
+      "options": [
+        {
+          "text": "Solo grinding — just me, my skills, and endless mobs",
+          "text_ko": "솔로 사냥 — 나 혼자, 내 스킬, 그리고 끝없는 몬스터",
+          "scores": { "warrior": 2, "magician": 1, "bowman": 2, "thief": 3, "pirate": 1 }
+        },
+        {
+          "text": "Party play — boss raids and group content are the best",
+          "text_ko": "파티 플레이 — 보스 레이드와 그룹 콘텐츠가 최고다",
+          "scores": { "warrior": 3, "magician": 2, "bowman": 1, "thief": 0, "pirate": 2 }
+        },
+        {
+          "text": "Exploring every map and finding hidden secrets",
+          "text_ko": "모든 맵을 탐험하고 숨겨진 비밀을 찾는다",
+          "scores": { "warrior": 0, "magician": 2, "bowman": 2, "thief": 2, "pirate": 3 }
+        },
+        {
+          "text": "Perfecting my character's gear and stats",
+          "text_ko": "캐릭터의 장비와 스탯을 완벽하게 맞춘다",
+          "scores": { "warrior": 1, "magician": 3, "bowman": 1, "thief": 1, "pirate": 0 }
+        }
+      ]
+    },
+    {
+      "question": "Which skill animation appeals to you the most?",
+      "question_ko": "어떤 스킬 이펙트가 가장 마음에 드시나요?",
+      "options": [
+        {
+          "text": "A giant sword slash that shakes the entire screen",
+          "text_ko": "화면 전체를 흔드는 거대한 검 슬래시",
+          "scores": { "warrior": 3, "magician": 0, "bowman": 0, "thief": 0, "pirate": 1 }
+        },
+        {
+          "text": "Dazzling elemental magic — fire, ice, lightning everywhere",
+          "text_ko": "눈부신 원소 마법 — 화면 가득 불, 얼음, 번개",
+          "scores": { "warrior": 0, "magician": 3, "bowman": 0, "thief": 0, "pirate": 1 }
+        },
+        {
+          "text": "A rain of arrows covering the sky",
+          "text_ko": "하늘을 뒤덮는 화살 비",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 3, "thief": 0, "pirate": 1 }
+        },
+        {
+          "text": "Quick, dark slashes — enemies die before they see me",
+          "text_ko": "빠르고 어두운 참격 — 적들이 나를 보기 전에 쓰러진다",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 0, "thief": 3, "pirate": 1 }
+        },
+        {
+          "text": "Explosive punches, kicks, and gunfire — pure action movie vibes",
+          "text_ko": "폭발적인 펀치, 킥, 총격 — 액션 영화 그 자체",
+          "scores": { "warrior": 1, "magician": 0, "bowman": 0, "thief": 0, "pirate": 3 }
+        }
+      ]
+    },
+    {
+      "question": "You find a rare item drop. What do you do?",
+      "question_ko": "레어 아이템이 드랍되었습니다. 어떻게 하시겠습니까?",
+      "options": [
+        {
+          "text": "Equip it immediately — power upgrade!",
+          "text_ko": "바로 장착한다 — 전투력 상승!",
+          "scores": { "warrior": 3, "magician": 0, "bowman": 1, "thief": 0, "pirate": 1 }
+        },
+        {
+          "text": "Study its stats carefully and theory-craft the optimal build",
+          "text_ko": "스탯을 꼼꼼히 분석하고 최적의 빌드를 설계한다",
+          "scores": { "warrior": 0, "magician": 3, "bowman": 1, "thief": 1, "pirate": 0 }
+        },
+        {
+          "text": "Sell it on the auction house for maximum profit",
+          "text_ko": "경매장에서 최대 이익으로 판매한다",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 1, "thief": 3, "pirate": 1 }
+        },
+        {
+          "text": "Share it with a guild member who needs it more",
+          "text_ko": "더 필요한 길드원에게 나눠준다",
+          "scores": { "warrior": 1, "magician": 1, "bowman": 2, "thief": 0, "pirate": 3 }
+        }
+      ]
+    },
+    {
+      "question": "What matters most in your ideal weapon?",
+      "question_ko": "이상적인 무기에서 가장 중요한 것은?",
+      "options": [
+        {
+          "text": "Raw power — the bigger the damage number, the better",
+          "text_ko": "순수한 힘 — 데미지 숫자가 클수록 좋다",
+          "scores": { "warrior": 3, "magician": 0, "bowman": 1, "thief": 0, "pirate": 2 }
+        },
+        {
+          "text": "Magical enhancement — it should amplify my spells",
+          "text_ko": "마법 강화 — 내 마법을 증폭시켜야 한다",
+          "scores": { "warrior": 0, "magician": 3, "bowman": 0, "thief": 0, "pirate": 1 }
+        },
+        {
+          "text": "Precision and range — hit targets from across the map",
+          "text_ko": "정확성과 사거리 — 맵 건너편의 적도 맞출 수 있어야 한다",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 3, "thief": 1, "pirate": 1 }
+        },
+        {
+          "text": "Speed — attack as fast as possible for maximum hits",
+          "text_ko": "속도 — 최대한 빠르게 공격해서 최대 타격을 입힌다",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 1, "thief": 3, "pirate": 1 }
+        },
+        {
+          "text": "Versatility — a weapon that looks cool and does everything",
+          "text_ko": "다재다능함 — 멋지면서 뭐든 할 수 있는 무기",
+          "scores": { "warrior": 1, "magician": 1, "bowman": 0, "thief": 0, "pirate": 3 }
+        }
+      ]
+    },
+    {
+      "question": "Which MapleStory town would you call home?",
+      "question_ko": "어느 메이플스토리 마을을 집으로 삼으시겠습니까?",
+      "options": [
+        {
+          "text": "Perion — rugged mountains where only the strong survive",
+          "text_ko": "페리온 — 강한 자만 살아남는 험준한 산악 지대",
+          "scores": { "warrior": 3, "magician": 0, "bowman": 0, "thief": 0, "pirate": 0 }
+        },
+        {
+          "text": "Ellinia — the enchanted forest full of ancient magic",
+          "text_ko": "엘리니아 — 고대 마법이 가득한 마법의 숲",
+          "scores": { "warrior": 0, "magician": 3, "bowman": 1, "thief": 0, "pirate": 0 }
+        },
+        {
+          "text": "Henesys — the peaceful mushroom village with wide open fields",
+          "text_ko": "헤네시스 — 넓은 벌판의 평화로운 버섯 마을",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 3, "thief": 0, "pirate": 1 }
+        },
+        {
+          "text": "Kerning City — the dark urban jungle where shadows rule",
+          "text_ko": "커닝시티 — 그림자가 지배하는 어두운 도시",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 0, "thief": 3, "pirate": 1 }
+        },
+        {
+          "text": "Nautilus — the submarine fortress sailing the open seas",
+          "text_ko": "노틸러스 — 넓은 바다를 항해하는 잠수함 요새",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 0, "thief": 1, "pirate": 3 }
+        }
+      ]
+    },
+    {
+      "question": "A PvP tournament is announced! What's your reaction?",
+      "question_ko": "PvP 토너먼트가 개최됩니다! 당신의 반응은?",
+      "options": [
+        {
+          "text": "Sign up immediately — I'll crush everyone head-on",
+          "text_ko": "즉시 신청한다 — 정면 승부로 다 이겨버리겠어",
+          "scores": { "warrior": 3, "magician": 1, "bowman": 0, "thief": 1, "pirate": 2 }
+        },
+        {
+          "text": "Study the meta and prepare the perfect counter-strategy",
+          "text_ko": "메타를 분석하고 완벽한 카운터 전략을 준비한다",
+          "scores": { "warrior": 0, "magician": 3, "bowman": 1, "thief": 2, "pirate": 0 }
+        },
+        {
+          "text": "Not really interested — I prefer PvE content",
+          "text_ko": "별로 관심 없다 — PvE 콘텐츠가 더 좋다",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 3, "thief": 0, "pirate": 1 }
+        },
+        {
+          "text": "I'll participate but use tricky, unconventional tactics",
+          "text_ko": "참가하되 기발하고 파격적인 전술을 쓰겠다",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 0, "thief": 3, "pirate": 2 }
+        }
+      ]
+    },
+    {
+      "question": "How important is the storyline and lore to you?",
+      "question_ko": "스토리라인과 세계관이 얼마나 중요한가요?",
+      "options": [
+        {
+          "text": "I skip every cutscene — just let me fight!",
+          "text_ko": "컷신은 전부 스킵 — 그냥 싸우게 해줘!",
+          "scores": { "warrior": 3, "magician": 0, "bowman": 0, "thief": 1, "pirate": 2 }
+        },
+        {
+          "text": "I love deep lore — the Black Mage saga is peak storytelling",
+          "text_ko": "깊은 세계관을 사랑한다 — 검은 마법사 스토리는 최고다",
+          "scores": { "warrior": 0, "magician": 3, "bowman": 1, "thief": 0, "pirate": 0 }
+        },
+        {
+          "text": "I follow the main story casually but don't obsess over details",
+          "text_ko": "메인 스토리는 가볍게 따라가지만 세부사항에 집착하진 않는다",
+          "scores": { "warrior": 1, "magician": 0, "bowman": 3, "thief": 0, "pirate": 1 }
+        },
+        {
+          "text": "The story is okay, but character aesthetics matter more to me",
+          "text_ko": "스토리도 좋지만 캐릭터 외형이 더 중요하다",
+          "scores": { "warrior": 0, "magician": 1, "bowman": 0, "thief": 2, "pirate": 3 }
+        }
+      ]
+    },
+    {
+      "question": "You're training at Arcane River. What's your grinding style?",
+      "question_ko": "아케인 리버에서 사냥 중입니다. 당신의 사냥 스타일은?",
+      "options": [
+        {
+          "text": "Stand in the center and let my skills hit everything around me",
+          "text_ko": "가운데 서서 스킬로 주변 모든 것을 때린다",
+          "scores": { "warrior": 3, "magician": 2, "bowman": 0, "thief": 0, "pirate": 1 }
+        },
+        {
+          "text": "Teleport around the map and chain spells efficiently",
+          "text_ko": "맵을 텔레포트하며 효율적으로 마법을 연결한다",
+          "scores": { "warrior": 0, "magician": 3, "bowman": 0, "thief": 1, "pirate": 0 }
+        },
+        {
+          "text": "Position myself on a platform and rain attacks downward",
+          "text_ko": "발판 위에 자리 잡고 아래로 공격을 퍼붓는다",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 3, "thief": 0, "pirate": 1 }
+        },
+        {
+          "text": "Dash through mobs at maximum speed, clearing as I go",
+          "text_ko": "최대 속도로 몹 사이를 돌진하며 지나가면서 처리한다",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 0, "thief": 3, "pirate": 2 }
+        },
+        {
+          "text": "Summon minions or turrets and let them do the work",
+          "text_ko": "소환수나 터렛을 설치하고 알아서 처리하게 한다",
+          "scores": { "warrior": 0, "magician": 1, "bowman": 1, "thief": 0, "pirate": 3 }
+        }
+      ]
+    },
+    {
+      "question": "What's your approach to boss fights like Lucid or Will?",
+      "question_ko": "루시드나 윌 같은 보스전에서의 당신의 접근 방식은?",
+      "options": [
+        {
+          "text": "Face-tank the damage while dealing heavy blows",
+          "text_ko": "데미지를 맞으면서도 강력한 타격을 가한다",
+          "scores": { "warrior": 3, "magician": 0, "bowman": 0, "thief": 0, "pirate": 2 }
+        },
+        {
+          "text": "Manage cooldowns perfectly and time my burst windows",
+          "text_ko": "쿨타임을 완벽하게 관리하고 버스트 타이밍을 맞춘다",
+          "scores": { "warrior": 0, "magician": 3, "bowman": 1, "thief": 2, "pirate": 0 }
+        },
+        {
+          "text": "Stay at max range and dodge mechanics patiently",
+          "text_ko": "최대 사거리를 유지하고 패턴을 인내심 있게 피한다",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 3, "thief": 1, "pirate": 0 }
+        },
+        {
+          "text": "Use iframes and mobility to never get hit",
+          "text_ko": "무적기와 기동력으로 절대 안 맞는다",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 0, "thief": 3, "pirate": 2 }
+        },
+        {
+          "text": "Bind the boss, setup summons, then go all-out",
+          "text_ko": "보스를 바인드하고 소환수를 세팅한 뒤 올인한다",
+          "scores": { "warrior": 1, "magician": 1, "bowman": 0, "thief": 0, "pirate": 3 }
+        }
+      ]
+    },
+    {
+      "question": "Pick your ideal outfit concept for your character:",
+      "question_ko": "캐릭터의 이상적인 코디 컨셉을 고르세요:",
+      "options": [
+        {
+          "text": "Heavy plate armor — intimidating and unstoppable",
+          "text_ko": "무거운 플레이트 아머 — 위압적이고 막을 수 없는",
+          "scores": { "warrior": 3, "magician": 0, "bowman": 0, "thief": 0, "pirate": 0 }
+        },
+        {
+          "text": "Elegant robes with magical auras and glowing effects",
+          "text_ko": "마법의 오라와 빛나는 효과가 있는 우아한 로브",
+          "scores": { "warrior": 0, "magician": 3, "bowman": 0, "thief": 0, "pirate": 0 }
+        },
+        {
+          "text": "Nature-themed outfit with a forest ranger vibe",
+          "text_ko": "숲 레인저 느낌의 자연 테마 의상",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 3, "thief": 0, "pirate": 1 }
+        },
+        {
+          "text": "Dark assassin gear — sleek, black, minimal",
+          "text_ko": "어둡고 세련된 암살자 장비 — 심플하고 블랙",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 0, "thief": 3, "pirate": 0 }
+        },
+        {
+          "text": "Pirate captain coat with flashy accessories",
+          "text_ko": "화려한 액세서리가 달린 해적 선장 코트",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 0, "thief": 0, "pirate": 3 }
+        }
+      ]
+    },
+    {
+      "question": "You can only max one stat. Which do you choose?",
+      "question_ko": "하나의 스탯만 만렙으로 올릴 수 있습니다. 어떤 것을 선택하시겠습니까?",
+      "options": [
+        {
+          "text": "STR — overwhelming physical strength",
+          "text_ko": "STR — 압도적인 물리적 힘",
+          "scores": { "warrior": 3, "magician": 0, "bowman": 0, "thief": 0, "pirate": 2 }
+        },
+        {
+          "text": "INT — infinite magical intelligence",
+          "text_ko": "INT — 무한한 마법 지능",
+          "scores": { "warrior": 0, "magician": 3, "bowman": 0, "thief": 0, "pirate": 0 }
+        },
+        {
+          "text": "DEX — perfect aim and agility",
+          "text_ko": "DEX — 완벽한 조준과 민첩성",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 3, "thief": 1, "pirate": 0 }
+        },
+        {
+          "text": "LUK — fortune favors the bold",
+          "text_ko": "LUK — 행운은 대담한 자의 편",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 0, "thief": 3, "pirate": 1 }
+        }
+      ]
+    },
+    {
+      "question": "What's your biggest motivation to keep playing MapleStory?",
+      "question_ko": "메이플스토리를 계속 플레이하는 가장 큰 동기는?",
+      "options": [
+        {
+          "text": "Getting stronger and conquering harder bosses",
+          "text_ko": "더 강해지고 더 어려운 보스를 정복하는 것",
+          "scores": { "warrior": 3, "magician": 1, "bowman": 1, "thief": 1, "pirate": 1 }
+        },
+        {
+          "text": "Collecting rare items and completing achievements",
+          "text_ko": "레어 아이템을 모으고 업적을 달성하는 것",
+          "scores": { "warrior": 0, "magician": 2, "bowman": 3, "thief": 1, "pirate": 0 }
+        },
+        {
+          "text": "The thrill of earning mesos and playing the market",
+          "text_ko": "메소를 벌고 시장을 공략하는 스릴",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 0, "thief": 3, "pirate": 1 }
+        },
+        {
+          "text": "The social experience — guilds, friends, community events",
+          "text_ko": "소셜 경험 — 길드, 친구, 커뮤니티 이벤트",
+          "scores": { "warrior": 1, "magician": 0, "bowman": 0, "thief": 0, "pirate": 3 }
+        },
+        {
+          "text": "Mastering my class and optimizing every aspect",
+          "text_ko": "내 직업을 마스터하고 모든 부분을 최적화하는 것",
+          "scores": { "warrior": 0, "magician": 3, "bowman": 1, "thief": 2, "pirate": 0 }
+        }
+      ]
+    },
+    {
+      "question": "If you could add one feature to MapleStory, what would it be?",
+      "question_ko": "메이플스토리에 하나의 기능을 추가할 수 있다면?",
+      "options": [
+        {
+          "text": "More challenging endgame bosses with unique mechanics",
+          "text_ko": "독특한 패턴의 더 어려운 엔드게임 보스",
+          "scores": { "warrior": 3, "magician": 1, "bowman": 1, "thief": 1, "pirate": 1 }
+        },
+        {
+          "text": "Deeper skill customization and build diversity",
+          "text_ko": "더 깊은 스킬 커스터마이징과 빌드 다양성",
+          "scores": { "warrior": 0, "magician": 3, "bowman": 1, "thief": 1, "pirate": 1 }
+        },
+        {
+          "text": "More exploration content — hidden maps, mini-games, secrets",
+          "text_ko": "더 많은 탐험 콘텐츠 — 숨겨진 맵, 미니게임, 비밀",
+          "scores": { "warrior": 0, "magician": 1, "bowman": 3, "thief": 1, "pirate": 2 }
+        },
+        {
+          "text": "Competitive PvP rankings and seasons",
+          "text_ko": "경쟁 PvP 랭킹과 시즌",
+          "scores": { "warrior": 1, "magician": 0, "bowman": 0, "thief": 3, "pirate": 1 }
+        },
+        {
+          "text": "More social features — housing, guilds, co-op quests",
+          "text_ko": "더 많은 소셜 기능 — 하우징, 길드, 협동 퀘스트",
+          "scores": { "warrior": 0, "magician": 0, "bowman": 1, "thief": 0, "pirate": 3 }
+        }
+      ]
+    }
+  ]
+}
