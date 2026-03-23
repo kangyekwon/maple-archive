@@ -90,7 +90,7 @@ window.StoryTimeline = (function () {
     var eras = data.eras || Object.keys(ERA_COLORS);
 
     // Sort events by order/date
-    events.sort(function (a, b) { return (a.order || 0) - (b.order || 0); });
+    events.sort(function (a, b) { return (a.chronological_order || a.order || 0) - (b.chronological_order || b.order || 0); });
 
     // X scale: event index (or timeline position)
     var xScale = d3.scaleLinear()

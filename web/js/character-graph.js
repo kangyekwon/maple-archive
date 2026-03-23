@@ -105,10 +105,14 @@ window.CharacterGraph = (function () {
       strength: l.strength,
     }));
 
-    // Power level scale for node radius
-    const powerExtent = d3.extent(nodes, (d) => d.power_level || 1);
+    // Power level mapping (string -> number) and scale for node radius
+    const POWER_MAP = { mortal: 1, elite: 3, legendary: 7, god: 10 };
+    const getPower = (d) => {
+      if (typeof d.power_level === 'number') return d.power_level || 1;
+      return POWER_MAP[d.power_level] || 1;
+    };
     const radiusScale = d3.scaleSqrt()
-      .domain([powerExtent[0] || 1, powerExtent[1] || 100])
+      .domain([1, 10])
       .range([6, 28]);
 
     // Build simulation
@@ -116,7 +120,7 @@ window.CharacterGraph = (function () {
       .force('link', d3.forceLink(links).id((d) => d.id).distance(100))
       .force('charge', d3.forceManyBody().strength(-200))
       .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collision', d3.forceCollide().radius((d) => radiusScale(d.power_level || 1) + 4));
+      .force('collision', d3.forceCollide().radius((d) => radiusScale(getPower(d)) + 4));
 
     // Draw links
     const linkGroup = g.append('g').attr('class', 'links');
@@ -139,7 +143,7 @@ window.CharacterGraph = (function () {
 
     // Node circles
     node.append('circle')
-      .attr('r', (d) => radiusScale(d.power_level || 1))
+      .attr('r', (d) => radiusScale(getPower(d)))
       .attr('fill', (d) => ROLE_COLORS[d.role] || ROLE_COLORS.default)
       .attr('stroke', '#fff')
       .attr('stroke-width', 1.5)
@@ -148,7 +152,7 @@ window.CharacterGraph = (function () {
     // Node labels
     node.append('text')
       .text((d) => d.name_ko || d.name || '')
-      .attr('dy', (d) => radiusScale(d.power_level || 1) + 14)
+      .attr('dy', (d) => radiusScale(getPower(d)) + 14)
       .attr('text-anchor', 'middle')
       .attr('fill', '#e2e8f0')
       .attr('font-size', '11px')

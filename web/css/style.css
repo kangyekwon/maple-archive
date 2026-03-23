@@ -255,6 +255,34 @@ body {
 
 .btn-secondary:hover { border-color: var(--primary); }
 
+/* === Search Suggestions === */
+.suggestion-item {
+    padding: 10px 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s;
+    border-bottom: 1px solid var(--border);
+}
+
+.suggestion-item:last-child { border-bottom: none; }
+
+.suggestion-item:hover { background: var(--bg-card-hover); }
+
+.suggestion-name {
+    font-size: 14px;
+    color: var(--text);
+}
+
+.suggestion-type {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
 /* === Search Results === */
 .search-results { margin-top: 16px; }
 

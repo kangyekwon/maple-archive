@@ -172,7 +172,7 @@
 
     try {
       // Fetch a large batch to extract distinct filter values
-      var data = await MapleApp.api(tabConfig.endpoint + '?limit=1000');
+      var data = await MapleApp.api(tabConfig.endpoint + '?limit=500');
       var items = Array.isArray(data) ? data : (Object.values(data).find(function(v) { return Array.isArray(v); }) || []);
 
       filterOptions[key] = {};

@@ -411,15 +411,24 @@ window.StatsDashboard = (function () {
       });
     }
 
-    // If data has a "distribution" or "data" array
+    // If data has a "distribution" or "data" or "items" property
     var arr = data.distribution || data.data || data.items;
-    if (Array.isArray(arr)) {
-      return arr.map(function (d) {
-        return {
-          label: d.label || d.name || d.key || 'Unknown',
-          value: d.value || d.count || d.total || 0
-        };
-      });
+    if (arr) {
+      // If it's an array of objects
+      if (Array.isArray(arr)) {
+        return arr.map(function (d) {
+          return {
+            label: d.label || d.name || d.key || 'Unknown',
+            value: d.value || d.count || d.total || 0
+          };
+        });
+      }
+      // If it's an object {key: number} (e.g. {distribution: {faction_name: count}})
+      if (typeof arr === 'object') {
+        return Object.keys(arr).map(function (key) {
+          return { label: key, value: arr[key] };
+        }).filter(function (d) { return typeof d.value === 'number'; });
+      }
     }
 
     // If plain object {key: number}

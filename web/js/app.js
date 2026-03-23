@@ -182,17 +182,18 @@
 
       if (query.length === 0) {
         suggestions.innerHTML = '';
-        suggestions.classList.remove('active');
+        suggestions.style.display = 'none';
         return;
       }
 
       debounceTimer = setTimeout(async function () {
         try {
           const data = await api('/api/suggest?q=' + encodeURIComponent(query));
-          renderSuggestions(data, suggestions);
+          const items = data.suggestions || data;
+          renderSuggestions(items, suggestions);
         } catch {
           suggestions.innerHTML = '';
-          suggestions.classList.remove('active');
+          suggestions.style.display = 'none';
         }
       }, 300);
     });
@@ -200,7 +201,7 @@
     // Close suggestions on outside click
     document.addEventListener('click', function (e) {
       if (!input.contains(e.target) && !suggestions.contains(e.target)) {
-        suggestions.classList.remove('active');
+        suggestions.style.display = 'none';
       }
     });
   }
@@ -208,7 +209,7 @@
   function renderSuggestions(items, container) {
     if (!items || items.length === 0) {
       container.innerHTML = '';
-      container.classList.remove('active');
+      container.style.display = 'none';
       return;
     }
 
@@ -231,13 +232,13 @@
       })
       .join('');
 
-    container.classList.add('active');
+    container.style.display = 'block';
 
     container.querySelectorAll('.suggestion-item').forEach(function (el) {
       el.addEventListener('click', function () {
         const type = this.dataset.type;
         const id = this.dataset.id;
-        container.classList.remove('active');
+        container.style.display = 'none';
         // Navigate to search tab and show detail
         switchTab('search');
         if (window.Search && typeof window.Search.showDetail === 'function') {
@@ -257,12 +258,12 @@
         api('/api/visitor-count'),
       ]);
 
-      const statsEl = document.getElementById('headerStats');
+      const statsEl = document.getElementById('statsCount');
       if (statsEl && stats) {
         const parts = [];
         if (stats.characters != null) parts.push('Characters: ' + stats.characters);
         if (stats.worlds != null) parts.push('Worlds: ' + stats.worlds);
-        if (stats.jobs != null) parts.push('Jobs: ' + stats.jobs);
+        if (stats.job_classes != null) parts.push('Jobs: ' + stats.job_classes);
         if (stats.bosses != null) parts.push('Bosses: ' + stats.bosses);
         statsEl.textContent = parts.join(' | ');
       }

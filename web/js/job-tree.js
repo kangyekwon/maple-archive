@@ -63,7 +63,10 @@ window.JobTree = (function () {
     fetch('/api/jobs/tree')
       .then((res) => res.json())
       .then((data) => {
-        root = d3.hierarchy(data);
+        // Transform flat jobs array into hierarchical tree structure
+        var treeData = _buildTreeFromJobs(data);
+
+        root = d3.hierarchy(treeData);
         root.x0 = height / 2;
         root.y0 = 0;
 
@@ -76,7 +79,15 @@ window.JobTree = (function () {
       })
       .catch((err) => {
         console.error('JobTree: failed to fetch data', err);
-        _showError(container, 'Failed to load job tree data.');
+        // Use fallback data
+        var fallbackTree = _getFallbackTree();
+        root = d3.hierarchy(fallbackTree);
+        root.x0 = height / 2;
+        root.y0 = 0;
+        if (root.children) {
+          root.children.forEach(_collapse);
+        }
+        _update(root);
       });
   }
 
@@ -277,6 +288,211 @@ window.JobTree = (function () {
 
     document.getElementById('close-job-modal').addEventListener('click', function () { modal.remove(); });
     modal.addEventListener('click', function (e) { if (e.target === modal) modal.remove(); });
+  }
+
+  /**
+   * Transform flat API response {jobs:[...], advancements:[]} into
+   * a hierarchical tree structure suitable for d3.hierarchy().
+   * Groups by branch, then by class_type within each branch.
+   */
+  function _buildTreeFromJobs(data) {
+    // If data is already hierarchical (has name and children), use as-is
+    if (data && data.name && data.children) {
+      return data;
+    }
+
+    var jobs = data.jobs || data;
+    if (!Array.isArray(jobs) || jobs.length === 0) {
+      return _getFallbackTree();
+    }
+
+    // Group jobs by branch
+    var branches = {};
+    jobs.forEach(function (job) {
+      var branchName = job.branch || 'other';
+      if (!branches[branchName]) {
+        branches[branchName] = {};
+      }
+      var classType = job.class_type || 'unknown';
+      if (!branches[branchName][classType]) {
+        branches[branchName][classType] = [];
+      }
+      branches[branchName][classType].push(job);
+    });
+
+    // Build tree: Root -> Branch -> ClassType -> Jobs
+    var branchLabels = {
+      explorer: 'Explorer',
+      cygnus_knights: 'Cygnus Knights',
+      heroes: 'Heroes',
+      resistance: 'Resistance',
+      nova: 'Nova',
+      flora: 'Flora',
+      anima: 'Anima',
+      child_of_god: 'Child of God',
+      other: 'Other'
+    };
+
+    var children = Object.keys(branches).map(function (branchKey) {
+      var classGroups = branches[branchKey];
+      var classChildren = Object.keys(classGroups).map(function (classKey) {
+        var jobNodes = classGroups[classKey].map(function (job) {
+          return {
+            name: job.name || '',
+            name_ko: job.name_ko || '',
+            name_en: job.name || '',
+            job_id: job.id,
+            class_type: classKey,
+            branch: branchKey,
+            description: job.description || '',
+            difficulty: job.difficulty || '',
+            weapon_type: job.weapon_type || ''
+          };
+        });
+
+        // If only one class type in this branch, skip the class grouping level
+        return {
+          name: classKey.charAt(0).toUpperCase() + classKey.slice(1),
+          name_ko: classKey,
+          class_type: classKey,
+          branch: branchKey,
+          children: jobNodes
+        };
+      });
+
+      return {
+        name: branchLabels[branchKey] || branchKey,
+        name_ko: branchLabels[branchKey] || branchKey,
+        class_type: null,
+        branch: branchKey,
+        children: classChildren
+      };
+    });
+
+    return {
+      name: 'MapleStory Jobs',
+      name_ko: 'MapleStory Jobs',
+      children: children
+    };
+  }
+
+  /**
+   * Fallback tree data when API fails or returns empty.
+   */
+  function _getFallbackTree() {
+    return {
+      name: 'MapleStory Jobs',
+      name_ko: 'MapleStory Jobs',
+      children: [
+        {
+          name: 'Explorer', name_ko: 'Explorer', branch: 'explorer',
+          children: [
+            { name: 'Warrior', name_ko: 'Warrior', class_type: 'warrior', children: [
+              { name_ko: '히어로', name: 'Hero', class_type: 'warrior', job_id: 1 },
+              { name_ko: '팔라딘', name: 'Paladin', class_type: 'warrior', job_id: 2 },
+              { name_ko: '다크나이트', name: 'Dark Knight', class_type: 'warrior', job_id: 3 }
+            ]},
+            { name: 'Magician', name_ko: 'Magician', class_type: 'magician', children: [
+              { name_ko: '아크메이지 (불/독)', name: 'Arch Mage (F/P)', class_type: 'magician', job_id: 4 },
+              { name_ko: '아크메이지 (썬/콜)', name: 'Arch Mage (I/L)', class_type: 'magician', job_id: 5 },
+              { name_ko: '비숍', name: 'Bishop', class_type: 'magician', job_id: 6 }
+            ]},
+            { name: 'Bowman', name_ko: 'Bowman', class_type: 'bowman', children: [
+              { name_ko: '보우마스터', name: 'Bowmaster', class_type: 'bowman', job_id: 7 },
+              { name_ko: '신궁', name: 'Marksman', class_type: 'bowman', job_id: 8 }
+            ]},
+            { name: 'Thief', name_ko: 'Thief', class_type: 'thief', children: [
+              { name_ko: '나이트로드', name: 'Night Lord', class_type: 'thief', job_id: 9 },
+              { name_ko: '섀도어', name: 'Shadower', class_type: 'thief', job_id: 10 },
+              { name_ko: '듀얼블레이드', name: 'Dual Blade', class_type: 'thief', job_id: 11 }
+            ]},
+            { name: 'Pirate', name_ko: 'Pirate', class_type: 'pirate', children: [
+              { name_ko: '바이퍼', name: 'Buccaneer', class_type: 'pirate', job_id: 12 },
+              { name_ko: '캡틴', name: 'Corsair', class_type: 'pirate', job_id: 13 },
+              { name_ko: '캐논슈터', name: 'Cannoneer', class_type: 'pirate', job_id: 14 }
+            ]}
+          ]
+        },
+        {
+          name: 'Cygnus Knights', name_ko: 'Cygnus Knights', branch: 'cygnus_knights',
+          children: [
+            { name: 'Warrior', name_ko: 'Warrior', class_type: 'warrior', children: [
+              { name_ko: '소울마스터', name: 'Dawn Warrior', class_type: 'warrior', job_id: 16 },
+              { name_ko: '미하일', name: 'Mihile', class_type: 'warrior', job_id: 21 }
+            ]},
+            { name: 'Magician', name_ko: 'Magician', class_type: 'magician', children: [
+              { name_ko: '플레임위자드', name: 'Blaze Wizard', class_type: 'magician', job_id: 17 }
+            ]},
+            { name: 'Bowman', name_ko: 'Bowman', class_type: 'bowman', children: [
+              { name_ko: '윈드브레이커', name: 'Wind Archer', class_type: 'bowman', job_id: 18 }
+            ]},
+            { name: 'Thief', name_ko: 'Thief', class_type: 'thief', children: [
+              { name_ko: '나이트워커', name: 'Night Walker', class_type: 'thief', job_id: 19 }
+            ]},
+            { name: 'Pirate', name_ko: 'Pirate', class_type: 'pirate', children: [
+              { name_ko: '스트라이커', name: 'Thunder Breaker', class_type: 'pirate', job_id: 20 }
+            ]}
+          ]
+        },
+        {
+          name: 'Heroes', name_ko: 'Heroes', branch: 'heroes',
+          children: [
+            { name: 'Warrior', name_ko: 'Warrior', class_type: 'warrior', children: [
+              { name_ko: '아란', name: 'Aran', class_type: 'warrior', job_id: 22 }
+            ]},
+            { name: 'Magician', name_ko: 'Magician', class_type: 'magician', children: [
+              { name_ko: '에반', name: 'Evan', class_type: 'magician', job_id: 23 },
+              { name_ko: '루미너스', name: 'Luminous', class_type: 'magician', job_id: 26 }
+            ]},
+            { name: 'Bowman', name_ko: 'Bowman', class_type: 'bowman', children: [
+              { name_ko: '메르세데스', name: 'Mercedes', class_type: 'bowman', job_id: 24 }
+            ]},
+            { name: 'Thief', name_ko: 'Thief', class_type: 'thief', children: [
+              { name_ko: '팬텀', name: 'Phantom', class_type: 'thief', job_id: 25 }
+            ]},
+            { name: 'Pirate', name_ko: 'Pirate', class_type: 'pirate', children: [
+              { name_ko: '은월', name: 'Shade', class_type: 'pirate', job_id: 27 }
+            ]}
+          ]
+        },
+        {
+          name: 'Resistance', name_ko: 'Resistance', branch: 'resistance',
+          children: [
+            { name: 'Warrior', name_ko: 'Warrior', class_type: 'warrior', children: [
+              { name_ko: '데몬슬레이어', name: 'Demon Slayer', class_type: 'warrior', job_id: 28 },
+              { name_ko: '데몬어벤져', name: 'Demon Avenger', class_type: 'warrior', job_id: 29 },
+              { name_ko: '블래스터', name: 'Blaster', class_type: 'warrior', job_id: 33 }
+            ]},
+            { name: 'Magician', name_ko: 'Magician', class_type: 'magician', children: [
+              { name_ko: '배틀메이지', name: 'Battle Mage', class_type: 'magician', job_id: 30 }
+            ]},
+            { name: 'Bowman', name_ko: 'Bowman', class_type: 'bowman', children: [
+              { name_ko: '와일드헌터', name: 'Wild Hunter', class_type: 'bowman', job_id: 31 }
+            ]},
+            { name: 'Pirate', name_ko: 'Pirate', class_type: 'pirate', children: [
+              { name_ko: '메카닉', name: 'Mechanic', class_type: 'pirate', job_id: 32 }
+            ]},
+            { name: 'Thief', name_ko: 'Thief', class_type: 'thief', children: [
+              { name_ko: '제논', name: 'Xenon', class_type: 'thief', job_id: 34 }
+            ]}
+          ]
+        },
+        {
+          name: 'Nova', name_ko: 'Nova', branch: 'nova',
+          children: [
+            { name: 'Warrior', name_ko: 'Warrior', class_type: 'warrior', children: [
+              { name_ko: '카이저', name: 'Kaiser', class_type: 'warrior', job_id: 35 }
+            ]},
+            { name: 'Thief', name_ko: 'Thief', class_type: 'thief', children: [
+              { name_ko: '카데나', name: 'Cadena', class_type: 'thief', job_id: 37 }
+            ]},
+            { name: 'Pirate', name_ko: 'Pirate', class_type: 'pirate', children: [
+              { name_ko: '엔젤릭버스터', name: 'Angelic Buster', class_type: 'pirate', job_id: 36 }
+            ]}
+          ]
+        }
+      ]
+    };
   }
 
   function _showError(container, message) {

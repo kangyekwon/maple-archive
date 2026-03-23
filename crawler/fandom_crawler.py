@@ -9,23 +9,59 @@ from config import FANDOM_BASE_URL
 logger = logging.getLogger(__name__)
 
 CATEGORIES_TO_CRAWL = [
+    # Classes & Characters
     ("Classes", "Classes"),
-    ("Bosses", "Bosses"),
     ("Characters", "Characters"),
+    ("Explorers", "Explorers"),
+    ("Cygnus_Knights", "Cygnus Knights"),
+    # Skills
     ("Explorer_Skills", "Explorer Skills"),
     ("Cygnus_Knight_Skills", "Cygnus Knight Skills"),
     ("Hero_Skills", "Hero Skills"),
     ("Resistance_Skills", "Resistance Skills"),
-    ("Equipment_Sets", "Equipment Sets"),
-    ("Boss_Reward_Equipment", "Boss Reward Equipment"),
-    ("Party_Quests", "Party Quests"),
-    ("Cross_World_Party_Quests", "Cross World Party Quests"),
-    ("Heroes_of_Maple", "Heroes of Maple"),
-    ("Arcane_River_NPCs", "Arcane River NPCs"),
-    ("Event_Quests", "Event Quests"),
     ("HEXA_Skills", "HEXA Skills"),
     ("Hyper_Skills", "Hyper Skills"),
     ("Link_Skills", "Link Skills"),
+    ("V_Skills", "V Skills"),
+    ("Soul_Weapon_Skills", "Soul Weapon Skills"),
+    ("Guild_Skills", "Guild Skills"),
+    ("Novice_Skills", "Novice Skills"),
+    ("Equipment_Skills", "Equipment Skills"),
+    # Equipment & Items
+    ("Equipment_Sets", "Equipment Sets"),
+    ("Boss_Reward_Equipment", "Boss Reward Equipment"),
+    ("Superior_Equipment", "Superior Equipment"),
+    ("Medals", "Medals"),
+    ("Rings", "Rings"),
+    ("Chairs", "Chairs"),
+    ("Totems", "Totems"),
+    ("Pocket_Items", "Pocket Items"),
+    ("Badges", "Badges"),
+    ("Androids", "Androids"),
+    ("Titles", "Titles"),
+    ("Equipment_Scrolls", "Equipment Scrolls"),
+    # Consumables
+    ("Potions", "Potions"),
+    ("Food", "Food"),
+    ("Crafting_Materials", "Crafting Materials"),
+    # Monsters & Bosses
+    ("Bosses", "Bosses"),
+    ("Mini-Bosses", "Mini-Bosses"),
+    ("Major_Bosses", "Major Bosses"),
+    # Quests & Events
+    ("Party_Quests", "Party Quests"),
+    ("Cross_World_Party_Quests", "Cross World Party Quests"),
+    ("Heroes_of_Maple", "Heroes of Maple"),
+    ("Event_Quests", "Event Quests"),
+    # World & Lore
+    ("Arcane_River_NPCs", "Arcane River NPCs"),
+    ("NPCs", "NPCs"),
+    ("Locations", "Locations"),
+    ("Lore", "Lore"),
+    ("Organizations", "Organizations"),
+    ("Transcendents", "Transcendents"),
+    ("Updates", "Updates"),
+    ("Removed_Content", "Removed Content"),
 ]
 
 
