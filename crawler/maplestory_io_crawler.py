@@ -574,6 +574,20 @@ class MapleStoryIOCrawler(BaseCrawler):
                             if isinstance(q, dict)
                         ])
 
+                        # Parse required quests
+                        req_quests_list = req_start.get("quests", []) or []
+                        required_quests = json.dumps([
+                            q.get("id") for q in req_quests_list
+                            if isinstance(q, dict)
+                        ]) if req_quests_list else json.dumps([])
+
+                        # Parse reward data from completion requirements
+                        rewards = detail.get("rewards", {}) or {}
+                        reward_items_list = rewards.get("items", []) or req_complete.get("items", []) or []
+                        reward_items = json.dumps(reward_items_list) if reward_items_list else json.dumps([])
+                        reward_exp = rewards.get("exp", 0) or detail.get("rewardExp", 0) or 0
+                        reward_mesos = rewards.get("mesos", 0) or detail.get("rewardMesos", 0) or 0
+
                         data.update({
                             "area": detail.get("area"),
                             "messages": messages,
@@ -581,6 +595,10 @@ class MapleStoryIOCrawler(BaseCrawler):
                             "end_npc_id": req_complete.get("npcId"),
                             "required_jobs": json.dumps(req_start.get("jobs", []) or []),
                             "required_items": json.dumps(req_start.get("items", []) or []),
+                            "required_quests": required_quests,
+                            "reward_items": reward_items,
+                            "reward_exp": reward_exp,
+                            "reward_mesos": reward_mesos,
                             "next_quests": next_quests,
                             "raw_data": json.dumps(detail, ensure_ascii=False),
                         })

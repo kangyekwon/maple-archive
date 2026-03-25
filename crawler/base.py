@@ -42,6 +42,10 @@ class BaseCrawler:
                     url, params=params, headers=merged_headers, timeout=timeout
                 )
 
+                if resp.status_code == 404:
+                    # 404 means page/resource doesn't exist - no point retrying
+                    resp.raise_for_status()
+
                 if resp.status_code == 429:
                     wait = RETRY_BACKOFF * (2 ** attempt)
                     logger.warning(f"429 Rate Limited. Waiting {wait:.0f}s...")

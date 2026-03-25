@@ -1159,6 +1159,53 @@ def get_wiki_page(page_id: int):
     return dict(page)
 
 
+# ============================================================
+# Namu Wiki Pages - Korean (5 endpoints)
+# ============================================================
+
+@app.get("/api/namu/pages")
+def get_namu_pages(limit: int = 100, offset: int = 0, category: str = None):
+    db = get_db()
+    queries = Queries(db)
+    return {"pages": [dict(p) for p in queries.get_all_namu_pages(limit, offset, category)],
+            "total": queries.get_namu_page_count(category)}
+
+
+@app.get("/api/namu/categories")
+def get_namu_categories():
+    db = get_db()
+    queries = Queries(db)
+    return {"categories": [dict(c) for c in queries.get_namu_categories()]}
+
+
+@app.get("/api/namu/stats")
+def get_namu_stats():
+    db = get_db()
+    queries = Queries(db)
+    count = queries.get_namu_page_count()
+    categories = queries.get_namu_categories()
+    return {"total": count, "categories": [dict(c) for c in categories]}
+
+
+@app.get("/api/namu/search")
+def search_namu(q: str = ""):
+    if not q:
+        return {"pages": []}
+    db = get_db()
+    queries = Queries(db)
+    return {"pages": [dict(p) for p in queries.search_namu_pages(q)]}
+
+
+@app.get("/api/namu/pages/{page_id}")
+def get_namu_page(page_id: int):
+    db = get_db()
+    queries = Queries(db)
+    page = queries.get_namu_page(page_id)
+    if not page:
+        raise HTTPException(404, "Namu wiki page not found")
+    return dict(page)
+
+
 if __name__ == "__main__":
     import uvicorn
     from config import SERVER_HOST, SERVER_PORT

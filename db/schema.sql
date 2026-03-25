@@ -625,3 +625,34 @@ END;
 CREATE TRIGGER IF NOT EXISTS crawled_wiki_ad AFTER DELETE ON crawled_wiki_pages BEGIN
     INSERT INTO crawled_wiki_fts(crawled_wiki_fts, rowid, title, extract, category) VALUES ('delete', old.page_id, old.title, old.extract, old.category);
 END;
+
+-- ============================================================
+-- Crawled Namu Wiki Pages (Korean)
+-- ============================================================
+CREATE TABLE IF NOT EXISTS crawled_namu_pages (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL UNIQUE,
+    category TEXT DEFAULT '',
+    summary TEXT DEFAULT '',
+    content TEXT DEFAULT '',
+    source_name TEXT DEFAULT '',
+    crawled_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_namu_category ON crawled_namu_pages(category);
+CREATE INDEX IF NOT EXISTS idx_namu_title ON crawled_namu_pages(title);
+
+CREATE VIRTUAL TABLE IF NOT EXISTS crawled_namu_fts USING fts5(
+    title, summary, content, category,
+    content='crawled_namu_pages', content_rowid='id',
+    tokenize='unicode61'
+);
+
+CREATE TRIGGER IF NOT EXISTS crawled_namu_ai AFTER INSERT ON crawled_namu_pages BEGIN
+    INSERT INTO crawled_namu_fts(rowid, title, summary, content, category)
+    VALUES (new.id, new.title, new.summary, new.content, new.category);
+END;
+CREATE TRIGGER IF NOT EXISTS crawled_namu_ad AFTER DELETE ON crawled_namu_pages BEGIN
+    INSERT INTO crawled_namu_fts(crawled_namu_fts, rowid, title, summary, content, category)
+    VALUES ('delete', old.id, old.title, old.summary, old.content, old.category);
+END;

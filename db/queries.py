@@ -670,6 +670,7 @@ class Queries:
         npc_count = self.get_crawled_npc_count()
         quest_count = self.get_crawled_quest_count()
         wiki_count = self.get_wiki_page_count()
+        namu_count = self.get_namu_page_count()
         boss_count = self.db.fetchone("SELECT COUNT(*) as cnt FROM crawled_mobs WHERE is_boss = 1")
         return {
             "mobs": mob_count,
@@ -678,6 +679,7 @@ class Queries:
             "npcs": npc_count,
             "quests": quest_count,
             "wiki_pages": wiki_count,
+            "namu_pages": namu_count,
             "bosses": boss_count["cnt"] if boss_count else 0,
         }
 
@@ -847,5 +849,62 @@ class Queries:
             SELECT category, COUNT(*) as count
             FROM crawled_wiki_pages
             WHERE category IS NOT NULL
+            GROUP BY category ORDER BY count DESC
+        """)
+
+    # ── Crawled Namu Wiki Pages ────────────────────
+    def upsert_crawled_namu_page(self, data: dict):
+        self.db.execute("""
+            INSERT INTO crawled_namu_pages (title, category, summary, content, source_name)
+            VALUES (?, ?, ?, ?, ?)
+            ON CONFLICT(title) DO UPDATE SET
+                category=excluded.category, summary=excluded.summary,
+                content=excluded.content, source_name=excluded.source_name,
+                crawled_at=CURRENT_TIMESTAMP
+        """, (
+            data.get("title"), data.get("category", ""),
+            data.get("summary", ""), data.get("content", ""),
+            data.get("source_name", ""),
+        ))
+
+    def get_all_namu_pages(self, limit=100, offset=0, category=None):
+        if category:
+            return self.db.fetchall("""
+                SELECT id, title, category, substr(summary, 1, 200) as summary_preview, source_name
+                FROM crawled_namu_pages WHERE category = ?
+                ORDER BY title LIMIT ? OFFSET ?
+            """, (category, limit, offset))
+        return self.db.fetchall("""
+            SELECT id, title, category, substr(summary, 1, 200) as summary_preview, source_name
+            FROM crawled_namu_pages ORDER BY title LIMIT ? OFFSET ?
+        """, (limit, offset))
+
+    def get_namu_page(self, page_id: int):
+        return self.db.fetchone("SELECT * FROM crawled_namu_pages WHERE id = ?", (page_id,))
+
+    def get_namu_page_by_title(self, title: str):
+        return self.db.fetchone("SELECT * FROM crawled_namu_pages WHERE title = ?", (title,))
+
+    def get_namu_page_count(self, category=None):
+        if category:
+            r = self.db.fetchone("SELECT COUNT(*) as cnt FROM crawled_namu_pages WHERE category = ?", (category,))
+        else:
+            r = self.db.fetchone("SELECT COUNT(*) as cnt FROM crawled_namu_pages")
+        return r["cnt"] if r else 0
+
+    def search_namu_pages(self, query: str, limit=50):
+        return self.db.fetchall("""
+            SELECT n.id, n.title, n.category, substr(n.summary, 1, 200) as summary_preview
+            FROM crawled_namu_fts f
+            JOIN crawled_namu_pages n ON f.rowid = n.id
+            WHERE crawled_namu_fts MATCH ?
+            ORDER BY rank LIMIT ?
+        """, (query, limit))
+
+    def get_namu_categories(self):
+        return self.db.fetchall("""
+            SELECT category, COUNT(*) as count
+            FROM crawled_namu_pages
+            WHERE category IS NOT NULL AND category != ''
             GROUP BY category ORDER BY count DESC
         """)

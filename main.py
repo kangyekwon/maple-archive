@@ -308,8 +308,9 @@ def cmd_crawl(args):
             from crawler import NamuCrawler
             crawler = NamuCrawler()
             try:
-                console.print("  [yellow]Namu Wiki crawling requires specific page names[/]")
-                queries.update_crawl_status("namu", 0)
+                console.print("  [cyan]Crawling Namu Wiki (Korean MapleStory pages)...[/]")
+                success, fail = crawler.crawl_all(db, queries)
+                console.print(f"  [green]{success} namu wiki pages crawled ({fail} failed)[/]")
             finally:
                 crawler.close()
 
@@ -326,8 +327,9 @@ def cmd_crawl(args):
                 console.print(f"  [green]{map_count} maps crawled[/]")
 
                 console.print("  [cyan]Crawling items from MapleStory.io...[/]")
-                item_count = crawler.crawl_all_items(db, queries, categories=["Equip"])
-                console.print(f"  [green]{item_count} items crawled[/]")
+                all_categories = ["Equip", "Use", "Setup", "Etc", "Cash"]
+                item_count = crawler.crawl_all_items(db, queries, categories=all_categories)
+                console.print(f"  [green]{item_count} items crawled (categories: {', '.join(all_categories)})[/]")
 
                 console.print("  [cyan]Crawling NPCs from MapleStory.io...[/]")
                 npc_count = crawler.crawl_all_npcs(db, queries, with_detail=args.detail)
@@ -434,8 +436,12 @@ def main():
         help="What to crawl",
     )
     crawl_parser.add_argument(
-        "--detail", action="store_true",
-        help="Fetch per-mob detail (HP/EXP/foundAt) - slower but richer data",
+        "--detail", action="store_true", default=True,
+        help="Fetch per-entity detail (HP/EXP/foundAt/rewards) - slower but richer data (default: True)",
+    )
+    crawl_parser.add_argument(
+        "--no-detail", dest="detail", action="store_false",
+        help="Skip per-entity detail fetch for faster crawling",
     )
 
     # search
